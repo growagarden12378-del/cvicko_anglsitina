@@ -1,0 +1,445 @@
+{
+ "test": {
+  "subject": "aj",
+  "year": 2026,
+  "variant": "A",
+  "title": "Angličtina – precvičovací test 2026 (variant A)",
+  "duration_min": 40
+ },
+ "passages": [
+  {
+   "key": "u1",
+   "title": "Ukážka 1 – Tom’s new school",
+   "body": "Tom started at a new school in September. At first he felt nervous because he did not know anyone. On the first day, a girl called Mia showed him the library and the canteen. They both love chess, so they joined the school chess club. Now Tom meets his new friends there every Wednesday after lessons. He says that moving to a new school was scary, but it was worth it."
+  },
+  {
+   "key": "u2",
+   "title": "Ukážka 2 – Plastic in the sea",
+   "body": "Every year, millions of tonnes of plastic end up in the oceans. Sea animals often mistake it for food, and many of them get sick. Scientists say that most plastic comes from the land, not from ships. Some towns now ban plastic bags, and volunteers clean beaches at weekends. Experts agree that the best solution is to use less plastic in the first place."
+  }
+ ],
+ "questions": [
+  {
+   "number": 1,
+   "kind": "abcd",
+   "topic": "Prítomné časy",
+   "prompt": "My brother ___ football every Saturday.",
+   "options": [
+    "plays",
+    "play",
+    "is playing",
+    "playing"
+   ],
+   "correct": "A",
+   "explanation": "Pravidelný zvyk = present simple, pri he/she/it pridáme -s.",
+   "verified": true
+  },
+  {
+   "number": 2,
+   "kind": "abcd",
+   "topic": "Prítomné časy",
+   "prompt": "Be quiet! The baby ___.",
+   "options": [
+    "sleeps",
+    "is sleeping",
+    "sleep",
+    "slept"
+   ],
+   "correct": "B",
+   "explanation": "Dej prebieha práve teraz = present continuous.",
+   "verified": true
+  },
+  {
+   "number": 3,
+   "kind": "short",
+   "topic": "Prítomné časy",
+   "prompt": "Dopíš správny tvar: She ___ (not like) coffee.",
+   "correct": "does not like",
+   "explanation": "Záporná veta v 3. osobe: does not + základný tvar.",
+   "accepted": [
+    "doesn't like",
+    "doesn’t like",
+    "doesnt like"
+   ],
+   "verified": true
+  },
+  {
+   "number": 4,
+   "kind": "abcd",
+   "topic": "Prítomné časy",
+   "prompt": "___ you usually have breakfast at home?",
+   "options": [
+    "Do",
+    "Does",
+    "Are",
+    "Is"
+   ],
+   "correct": "A",
+   "explanation": "Otázka so you používa do.",
+   "verified": true
+  },
+  {
+   "number": 5,
+   "kind": "short",
+   "topic": "Prítomné časy",
+   "prompt": "Dopíš sloveso v správnom tvare: Look! It ___ (rain).",
+   "correct": "is raining",
+   "explanation": "Look! signalizuje dej, ktorý prebieha teraz.",
+   "accepted": [],
+   "verified": true
+  },
+  {
+   "number": 6,
+   "kind": "abcd",
+   "topic": "Minulé a budúce časy",
+   "prompt": "Last summer we ___ to Italy.",
+   "options": [
+    "go",
+    "went",
+    "gone",
+    "goes"
+   ],
+   "correct": "B",
+   "explanation": "Go – went – gone.",
+   "verified": true
+  },
+  {
+   "number": 7,
+   "kind": "abcd",
+   "topic": "Minulé a budúce časy",
+   "prompt": "I ___ my keys yesterday.",
+   "options": [
+    "losed",
+    "lost",
+    "lose",
+    "loses"
+   ],
+   "correct": "B",
+   "explanation": "Lose – lost – lost.",
+   "verified": true
+  },
+  {
+   "number": 8,
+   "kind": "abcd",
+   "topic": "Minulé a budúce časy",
+   "prompt": "Tomorrow I ___ my grandmother.",
+   "options": [
+    "will visit",
+    "visited",
+    "have visited",
+    "visit"
+   ],
+   "correct": "A",
+   "explanation": "Rozhodnutie alebo predpoveď o budúcnosti: will + základný tvar.",
+   "verified": true
+  },
+  {
+   "number": 9,
+   "kind": "short",
+   "topic": "Minulé a budúce časy",
+   "prompt": "Dopíš minulý čas: He ___ (write) a letter last week.",
+   "correct": "wrote",
+   "explanation": "Write – wrote – written.",
+   "accepted": [],
+   "verified": true
+  },
+  {
+   "number": 10,
+   "kind": "abcd",
+   "topic": "Minulé a budúce časy",
+   "prompt": "Look at those clouds! It ___ rain.",
+   "options": [
+    "is going to",
+    "will be",
+    "was",
+    "has"
+   ],
+   "correct": "A",
+   "explanation": "Vidíme znak, že sa niečo stane: going to.",
+   "verified": true
+  },
+  {
+   "number": 11,
+   "kind": "abcd",
+   "topic": "Slovná zásoba",
+   "prompt": "Čo znamená „knee“?",
+   "options": [
+    "koleno",
+    "lakeť",
+    "členok",
+    "rameno"
+   ],
+   "correct": "A",
+   "explanation": "Knee = koleno, elbow = lakeť.",
+   "verified": true
+  },
+  {
+   "number": 12,
+   "kind": "abcd",
+   "topic": "Slovná zásoba",
+   "prompt": "Which word is the opposite of “generous”?",
+   "options": [
+    "kind",
+    "mean",
+    "rich",
+    "happy"
+   ],
+   "correct": "B",
+   "explanation": "Generous = štedrý, mean = lakomý.",
+   "verified": true
+  },
+  {
+   "number": 13,
+   "kind": "short",
+   "topic": "Slovná zásoba",
+   "prompt": "Dopíš anglický preklad slova „zajtra“:",
+   "correct": "tomorrow",
+   "explanation": "Tomorrow = zajtra, yesterday = včera.",
+   "accepted": [],
+   "verified": true
+  },
+  {
+   "number": 14,
+   "kind": "abcd",
+   "topic": "Slovná zásoba",
+   "prompt": "I need to ___ a decision before Friday.",
+   "options": [
+    "do",
+    "make",
+    "have",
+    "give"
+   ],
+   "correct": "B",
+   "explanation": "Správne spojenie je make a decision.",
+   "verified": true
+  },
+  {
+   "number": 15,
+   "kind": "short",
+   "topic": "Slovná zásoba",
+   "prompt": "Dopíš slovo: A person who teaches at school is a ______.",
+   "correct": "teacher",
+   "explanation": "Teacher = učiteľ.",
+   "accepted": [],
+   "verified": true
+  },
+  {
+   "number": 16,
+   "kind": "abcd",
+   "topic": "Predložky a členy",
+   "prompt": "I was born ___ 2010.",
+   "options": [
+    "in",
+    "on",
+    "at",
+    "by"
+   ],
+   "correct": "A",
+   "explanation": "Pred rokmi používame in.",
+   "verified": true
+  },
+  {
+   "number": 17,
+   "kind": "abcd",
+   "topic": "Predložky a členy",
+   "prompt": "She is ___ honest girl.",
+   "options": [
+    "a",
+    "an",
+    "the",
+    "–"
+   ],
+   "correct": "B",
+   "explanation": "Honest začína samohláskovým zvukom, preto an.",
+   "verified": true
+  },
+  {
+   "number": 18,
+   "kind": "abcd",
+   "topic": "Predložky a členy",
+   "prompt": "We arrived ___ the airport at noon.",
+   "options": [
+    "in",
+    "at",
+    "to",
+    "on"
+   ],
+   "correct": "B",
+   "explanation": "Arrive at pri menších miestach, arrive in pri mestách.",
+   "verified": true
+  },
+  {
+   "number": 19,
+   "kind": "short",
+   "topic": "Predložky a členy",
+   "prompt": "Doplň predložku: The film starts ___ 7 p.m.",
+   "correct": "at",
+   "explanation": "Pred presným časom používame at.",
+   "accepted": [],
+   "verified": true
+  },
+  {
+   "number": 20,
+   "kind": "abcd",
+   "topic": "Predložky a členy",
+   "prompt": "___ Sun rises in the east.",
+   "options": [
+    "A",
+    "An",
+    "The",
+    "–"
+   ],
+   "correct": "C",
+   "explanation": "Jedinečné veci majú člen the.",
+   "verified": true
+  },
+  {
+   "number": 21,
+   "kind": "abcd",
+   "topic": "Modálne slovesá a podmienky",
+   "prompt": "You ___ wear a seat belt. It is the law.",
+   "options": [
+    "must",
+    "can",
+    "might",
+    "may"
+   ],
+   "correct": "A",
+   "explanation": "Must vyjadruje povinnosť.",
+   "verified": true
+  },
+  {
+   "number": 22,
+   "kind": "abcd",
+   "topic": "Modálne slovesá a podmienky",
+   "prompt": "If it rains tomorrow, we ___ at home.",
+   "options": [
+    "stay",
+    "will stay",
+    "would stay",
+    "stayed"
+   ],
+   "correct": "B",
+   "explanation": "Reálna podmienka: if + prítomný čas, will.",
+   "verified": true
+  },
+  {
+   "number": 23,
+   "kind": "abcd",
+   "topic": "Modálne slovesá a podmienky",
+   "prompt": "If I ___ rich, I would buy a boat.",
+   "options": [
+    "am",
+    "was",
+    "were",
+    "will be"
+   ],
+   "correct": "C",
+   "explanation": "Nereálna podmienka: if I were.",
+   "verified": true
+  },
+  {
+   "number": 24,
+   "kind": "short",
+   "topic": "Modálne slovesá a podmienky",
+   "prompt": "Dopíš modálne sloveso: ___ I open the window? (Môžem otvoriť okno?)",
+   "correct": "Can",
+   "explanation": "Žiadosť o dovolenie: can, may alebo could.",
+   "accepted": [
+    "May",
+    "Could"
+   ],
+   "verified": true
+  },
+  {
+   "number": 25,
+   "kind": "abcd",
+   "topic": "Modálne slovesá a podmienky",
+   "prompt": "You ___ park here. It is forbidden.",
+   "options": [
+    "mustn’t",
+    "don’t have to",
+    "needn’t",
+    "may"
+   ],
+   "correct": "A",
+   "explanation": "Mustn’t = zákaz.",
+   "verified": true
+  },
+  {
+   "number": 26,
+   "kind": "abcd",
+   "topic": "Čítanie s porozumením",
+   "prompt": "Why did Tom feel nervous at first?",
+   "options": [
+    "He did not know anyone.",
+    "He lost his bag.",
+    "He did not like chess.",
+    "He was late."
+   ],
+   "correct": "A",
+   "explanation": "V texte: he did not know anyone.",
+   "verified": true,
+   "passage": "u1"
+  },
+  {
+   "number": 27,
+   "kind": "abcd",
+   "topic": "Čítanie s porozumením",
+   "prompt": "What do Tom and Mia have in common?",
+   "options": [
+    "They live on one street.",
+    "They both love chess.",
+    "They are in the same class.",
+    "They both like the canteen."
+   ],
+   "correct": "B",
+   "explanation": "V texte: They both love chess.",
+   "verified": true,
+   "passage": "u1"
+  },
+  {
+   "number": 28,
+   "kind": "short",
+   "topic": "Čítanie s porozumením",
+   "prompt": "Napíš, v ktorý deň sa schádza šachový klub (jedno slovo):",
+   "correct": "Wednesday",
+   "explanation": "Klub sa schádza každú stredu.",
+   "accepted": [],
+   "verified": true,
+   "passage": "u1"
+  },
+  {
+   "number": 29,
+   "kind": "abcd",
+   "topic": "Čítanie s porozumením",
+   "prompt": "According to the text, where does most plastic come from?",
+   "options": [
+    "Ships",
+    "The land",
+    "Fishermen",
+    "Rivers only"
+   ],
+   "correct": "B",
+   "explanation": "Text hovorí o súši (the land).",
+   "verified": true,
+   "passage": "u2"
+  },
+  {
+   "number": 30,
+   "kind": "abcd",
+   "topic": "Čítanie s porozumením",
+   "prompt": "What do experts recommend?",
+   "options": [
+    "Cleaning beaches only.",
+    "Using less plastic.",
+    "Feeding sea animals.",
+    "Banning all ships."
+   ],
+   "correct": "B",
+   "explanation": "Najlepšie riešenie je používať menej plastu.",
+   "verified": true,
+   "passage": "u2"
+  }
+ ]
+}
