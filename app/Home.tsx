@@ -4,6 +4,7 @@ import { type ComponentProps, useEffect, useMemo, useRef, useState } from 'react
 import LevelGate from './Placement';
 import { LEVELS, clearLevel, readLevel } from '@/lib/level';
 import Journal from './Journal';
+import { OTHER_SITES_URL } from '@/lib/config';
 import Account, { type User } from './Account';
 import Support from './Support';
 import Consent from './Consent';
@@ -1002,6 +1003,7 @@ function HomeInner({
           <p className="brand__tag">Precvič si to. Zadarmo.</p>
         </div>
         <a className="iconbtn" href="/zebricek" aria-label="Rebríček" title="Rebríček"><span aria-hidden="true">🏆</span></a>
+        <a className="iconbtn" href={OTHER_SITES_URL} target="_blank" rel="noopener noreferrer" aria-label="Navštív naše ďalšie stránky" title="Navštív naše ďalšie stránky"><span aria-hidden="true">🌐</span></a>
         <Account
           user={user}
           badge={prog.equipped.badge}

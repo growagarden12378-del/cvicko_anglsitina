@@ -12,3 +12,7 @@ export const SITE_ICON: 'halloween' | 'normal' = 'halloween';
 export const OPERATOR_NAME = process.env.NEXT_PUBLIC_OPERATOR_NAME || 'Oleksii Futsur (prevádzkovateľ stránky Cvičko Angličtina)';
 export const CONTACT_EMAIL = process.env.NEXT_PUBLIC_CONTACT_EMAIL || 'ovfutsur@gmail.com';
 export const LEGAL_UPDATED = '31. októbra 2026';
+
+// Odkaz na tvoje ďalšie stránky (emoji tlačidlo hore vedľa rebríčka).
+// Zmeníš ho vo Verceli cez NEXT_PUBLIC_OTHER_SITES_URL alebo prepíš tu.
+export const OTHER_SITES_URL = process.env.NEXT_PUBLIC_OTHER_SITES_URL || 'https://cvicko9.vercel.app';
