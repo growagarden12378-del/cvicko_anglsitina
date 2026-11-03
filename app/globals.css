@@ -1189,3 +1189,17 @@ body.halloween::after { content: '🦇'; left: 82%; animation-duration: 18s; ani
 .pl__opt:active { transform: translateY(2px); box-shadow: 1px 1px 0 var(--ink); }
 .pl__link { background: none; border: 0; font: inherit; text-decoration: underline; color: var(--ink); opacity: 0.75; cursor: pointer; padding: 6px; align-self: center; }
 .pl__retake { background: none; border: 0; font: inherit; font-weight: 700; text-decoration: underline; color: inherit; cursor: pointer; padding: 0 0 0 6px; }
+
+/* Horná lišta: ikony vždy v jednom rade */
+.top__tools { display: flex; flex-wrap: nowrap; align-items: center; gap: 10px; }
+.sites { position: relative; }
+.sites__menu { position: absolute; right: 0; top: calc(100% + 10px); z-index: 30; width: 250px; max-width: calc(100vw - 32px); display: flex; flex-direction: column; gap: 10px; padding: 12px; background: var(--sheet); color: var(--ink); border: var(--edge); border-radius: 14px; box-shadow: var(--lift); }
+.sites__title { font-size: 0.95rem; }
+.sites__link { display: flex; align-items: center; gap: 10px; padding: 10px 12px; color: var(--ink); text-decoration: none; font-weight: 800; background: var(--sheet); border: var(--edge); border-radius: 12px; }
+.sites__link:hover { background: var(--soft); }
+.sites__link small { display: block; font-weight: 500; font-size: 0.8rem; opacity: 0.75; line-height: 1.25; }
+.sites__emoji { font-size: 1.6rem; }
+@media (max-width: 560px) {
+  .top > div:first-child { flex: 1 1 100%; margin-right: 0; }
+  .sites__menu, .acct__menu { left: 0; right: auto; }
+}
