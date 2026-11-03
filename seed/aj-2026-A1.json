@@ -1,0 +1,490 @@
+{
+ "test": {
+  "subject": "aj",
+  "year": 2026,
+  "variant": "A1",
+  "title": "Angličtina – A1 Začiatočník",
+  "duration_min": 30
+ },
+ "passages": [
+  {
+   "key": "u3",
+   "title": "Ukážka 3 – My day",
+   "body": "My name is Anna and I am twelve. I get up at seven o’clock and have breakfast with my brother. We walk to school together. After school I do my homework and play tennis. On Sundays we visit our grandmother, who lives in a small village."
+  }
+ ],
+ "questions": [
+  {
+   "number": 1,
+   "kind": "abcd",
+   "topic": "Slovná zásoba",
+   "prompt": "Čo znamená „knee“?",
+   "options": [
+    "členok",
+    "rameno",
+    "lakeť",
+    "koleno"
+   ],
+   "correct": "D",
+   "explanation": "Knee = koleno (vyslovuje sa „ní“, k sa nevyslovuje). Ďalšie časti tela: elbow = lakeť, ankle = členok, shoulder = rameno.",
+   "verified": true
+  },
+  {
+   "number": 2,
+   "kind": "short",
+   "topic": "Slovná zásoba",
+   "prompt": "Dopíš anglický preklad slova „zajtra“:",
+   "correct": "tomorrow",
+   "explanation": "Tomorrow = zajtra. Dni: yesterday = včera, today = dnes, tomorrow = zajtra.",
+   "accepted": [],
+   "verified": true
+  },
+  {
+   "number": 3,
+   "kind": "short",
+   "topic": "Slovná zásoba",
+   "prompt": "Dopíš slovo: A person who teaches at school is a ______.",
+   "correct": "teacher",
+   "explanation": "Teacher = učiteľ/učiteľka. Ďalšie povolania: doctor = lekár, driver = vodič, student = študent.",
+   "accepted": [],
+   "verified": true
+  },
+  {
+   "kind": "abcd",
+   "topic": "Slovná zásoba",
+   "prompt": "Čo znamená „window“?",
+   "options": [
+    "okno",
+    "strecha",
+    "stena",
+    "dvere"
+   ],
+   "correct": "A",
+   "explanation": "Window = okno. Nezamieňaj: door = dvere, wall = stena, roof = strecha.",
+   "verified": true,
+   "number": 4
+  },
+  {
+   "kind": "abcd",
+   "topic": "Slovná zásoba",
+   "prompt": "Which word means „veľký“?",
+   "options": [
+    "small",
+    "big",
+    "short",
+    "thin"
+   ],
+   "correct": "B",
+   "explanation": "Big = veľký (opak: small = malý). Podobné slovo je large.",
+   "verified": true,
+   "number": 5
+  },
+  {
+   "kind": "short",
+   "topic": "Slovná zásoba",
+   "prompt": "Dopíš anglický preklad slova „voda“:",
+   "correct": "water",
+   "explanation": "Water = voda. Vyslovuje sa „uóter“.",
+   "accepted": [],
+   "verified": true,
+   "number": 6
+  },
+  {
+   "kind": "abcd",
+   "topic": "Predložky a členy",
+   "prompt": "The cat is ___ the table.",
+   "options": [
+    "about",
+    "with",
+    "under",
+    "for"
+   ],
+   "correct": "C",
+   "explanation": "Under = pod. Ďalšie predložky miesta: on = na, in = v, next to = vedľa, behind = za.",
+   "verified": true,
+   "number": 7
+  },
+  {
+   "kind": "abcd",
+   "topic": "Predložky a členy",
+   "prompt": "I go to school ___ bus.",
+   "options": [
+    "at",
+    "with",
+    "in",
+    "by"
+   ],
+   "correct": "D",
+   "explanation": "Pri dopravných prostriedkoch používame by: by bus, by train, by car. (Pozor: on foot = pešo.)",
+   "verified": true,
+   "number": 8
+  },
+  {
+   "kind": "abcd",
+   "topic": "Modálne slovesá a podmienky",
+   "prompt": "I ___ swim very well.",
+   "options": [
+    "am",
+    "must",
+    "can",
+    "do"
+   ],
+   "correct": "C",
+   "explanation": "Can vyjadruje schopnosť (viem, dokážem). Po can nasleduje základný tvar slovesa bez to: I can swim.",
+   "verified": true,
+   "number": 9
+  },
+  {
+   "kind": "abcd",
+   "topic": "Modálne slovesá a podmienky",
+   "prompt": "___ you help me, please?",
+   "options": [
+    "Is",
+    "Do",
+    "Can",
+    "Are"
+   ],
+   "correct": "C",
+   "explanation": "Can you…? je zdvorilá prosba (Môžeš mi pomôcť?). Can na začiatku otázky = prosba alebo schopnosť.",
+   "verified": true,
+   "number": 10
+  },
+  {
+   "kind": "short",
+   "topic": "Modálne slovesá a podmienky",
+   "prompt": "Dopíš sloveso: I ___ speak English. (Viem po anglicky.)",
+   "correct": "can",
+   "explanation": "Can = vedieť, môcť. Preklad: Viem po anglicky. Záporne: cannot / can’t.",
+   "accepted": [],
+   "verified": true,
+   "number": 11
+  },
+  {
+   "kind": "abcd",
+   "topic": "Prítomné časy",
+   "prompt": "My parents ___ in Košice.",
+   "options": [
+    "live",
+    "living",
+    "lives",
+    "is living"
+   ],
+   "correct": "A",
+   "explanation": "Parents je množné číslo (they), preto sloveso bez -s: they live. Pri he/she/it by sme pridali -s (he lives).",
+   "verified": true,
+   "number": 12
+  },
+  {
+   "kind": "abcd",
+   "topic": "Prítomné časy",
+   "prompt": "Tom ___ a dog.",
+   "options": [
+    "has",
+    "have",
+    "haves",
+    "is have"
+   ],
+   "correct": "A",
+   "explanation": "Have sa pri he/she/it mení na has: Tom has a dog. Pri I/you/we/they ostáva have. Preklad: Tom má psa.",
+   "verified": true,
+   "number": 13
+  },
+  {
+   "kind": "short",
+   "topic": "Prítomné časy",
+   "prompt": "Dopíš správny tvar: We ___ (go) to school by bus.",
+   "correct": "go",
+   "explanation": "Pri we sloveso nemení tvar: we go. Príponu -s pridávame len pri he/she/it. Preklad: Chodíme do školy autobusom.",
+   "accepted": [],
+   "verified": true,
+   "number": 14
+  },
+  {
+   "kind": "abcd",
+   "topic": "Čítanie s porozumením",
+   "prompt": "What time does Anna get up?",
+   "options": [
+    "At nine.",
+    "At seven.",
+    "At six.",
+    "At eight."
+   ],
+   "correct": "B",
+   "explanation": "V texte je „I get up at seven o’clock“, teda o siedmej. Pri čítaní si nájdi vetu s odpoveďou.",
+   "verified": true,
+   "passage": "u3",
+   "number": 15
+  },
+  {
+   "kind": "abcd",
+   "topic": "Čítanie s porozumením",
+   "prompt": "Who does Anna have breakfast with?",
+   "options": [
+    "Her grandmother",
+    "Her brother",
+    "Her mother",
+    "Her friend"
+   ],
+   "correct": "B",
+   "explanation": "V texte: „have breakfast with my brother“ = raňajkujem s bratom.",
+   "verified": true,
+   "passage": "u3",
+   "number": 16
+  },
+  {
+   "kind": "short",
+   "topic": "Čítanie s porozumením",
+   "prompt": "Napíš, aký šport Anna hrá (jedno slovo):",
+   "correct": "tennis",
+   "explanation": "V texte: „play tennis“. Hľadaj v texte slovo za play.",
+   "accepted": [],
+   "verified": true,
+   "passage": "u3",
+   "number": 17
+  },
+  {
+   "kind": "abcd",
+   "topic": "Slovná zásoba",
+   "prompt": "Čo znamená „happy“?",
+   "options": [
+    "hladný",
+    "smutný",
+    "šťastný",
+    "unavený"
+   ],
+   "correct": "C",
+   "explanation": "Happy = šťastný, veselý. Opak: sad = smutný. Ďalšie pocity: tired = unavený, hungry = hladný.",
+   "verified": true,
+   "number": 18
+  },
+  {
+   "kind": "abcd",
+   "topic": "Prítomné časy",
+   "prompt": "I ___ a teacher.",
+   "options": [
+    "am",
+    "be",
+    "is",
+    "are"
+   ],
+   "correct": "A",
+   "explanation": "S I používame am: I am. He/she/it = is, you/we/they = are. Preklad: Som učiteľ.",
+   "verified": true,
+   "number": 19
+  },
+  {
+   "kind": "abcd",
+   "topic": "Predložky a členy",
+   "prompt": "I live ___ Slovakia.",
+   "options": [
+    "to",
+    "at",
+    "on",
+    "in"
+   ],
+   "correct": "D",
+   "explanation": "Pri krajinách a mestách používame in: in Slovakia, in Bratislava. Preklad: Bývam na Slovensku.",
+   "verified": true,
+   "number": 20
+  },
+  {
+   "kind": "abcd",
+   "topic": "Prítomné časy",
+   "prompt": "He ___ a student.",
+   "options": [
+    "be",
+    "are",
+    "am",
+    "is"
+   ],
+   "correct": "D",
+   "explanation": "S he/she/it používame is: he is. Am je len pri I, are pri you/we/they. Preklad: Je študent.",
+   "verified": true,
+   "number": 21
+  },
+  {
+   "kind": "abcd",
+   "topic": "Prítomné časy",
+   "prompt": "My sister ___ blue eyes.",
+   "options": [
+    "has",
+    "have",
+    "is",
+    "are"
+   ],
+   "correct": "A",
+   "explanation": "Pri he/she/it (sister = she) sa have mení na has: she has. Preklad: Moja sestra má modré oči.",
+   "verified": true,
+   "number": 22
+  },
+  {
+   "kind": "short",
+   "topic": "Prítomné časy",
+   "prompt": "Dopíš správny tvar: They ___ (play) football on Sundays.",
+   "correct": "play",
+   "explanation": "Pri they sloveso nemení tvar. -s pridávame len pri he/she/it. Preklad: V nedeľu hrajú futbal.",
+   "accepted": [],
+   "verified": true,
+   "number": 23
+  },
+  {
+   "kind": "abcd",
+   "topic": "Prítomné časy",
+   "prompt": "I ___ like coffee.",
+   "options": [
+    "don’t",
+    "doesn’t",
+    "not",
+    "no"
+   ],
+   "correct": "A",
+   "explanation": "Zápor v present simple tvoríme s do not (don’t). S I, you, we, they použijeme don’t, doesn’t je len pri he/she/it. Preklad: Nemám rád kávu.",
+   "verified": true,
+   "number": 24
+  },
+  {
+   "kind": "abcd",
+   "topic": "Minulé a budúce časy",
+   "prompt": "Yesterday I ___ at home.",
+   "options": [
+    "were",
+    "is",
+    "am",
+    "was"
+   ],
+   "correct": "D",
+   "explanation": "Minulosť od be: I/he/she/it = was, you/we/they = were. Yesterday = minulosť. Preklad: Včera som bol doma.",
+   "verified": true,
+   "number": 25
+  },
+  {
+   "kind": "abcd",
+   "topic": "Minulé a budúce časy",
+   "prompt": "She ___ to school yesterday.",
+   "options": [
+    "gone",
+    "goes",
+    "went",
+    "go"
+   ],
+   "correct": "C",
+   "explanation": "Go – went – gone. Yesterday = minulosť, preto went. Preklad: Včera šla do školy.",
+   "verified": true,
+   "number": 26
+  },
+  {
+   "kind": "abcd",
+   "topic": "Slovná zásoba",
+   "prompt": "Čo znamená „dog“?",
+   "options": [
+    "kôň",
+    "pes",
+    "mačka",
+    "vták"
+   ],
+   "correct": "B",
+   "explanation": "Dog = pes. Ďalšie zvieratá: cat = mačka, horse = kôň, bird = vták.",
+   "verified": true,
+   "number": 27
+  },
+  {
+   "kind": "abcd",
+   "topic": "Slovná zásoba",
+   "prompt": "Which colour is the sky on a sunny day?",
+   "options": [
+    "green",
+    "red",
+    "blue",
+    "black"
+   ],
+   "correct": "C",
+   "explanation": "Blue = modrá. Farby: red = červená, green = zelená, black = čierna, yellow = žltá.",
+   "verified": true,
+   "number": 28
+  },
+  {
+   "kind": "short",
+   "topic": "Slovná zásoba",
+   "prompt": "Dopíš anglický preklad slova „mama“:",
+   "correct": "mother",
+   "explanation": "Mother = matka. Neformálne: mum alebo mom.",
+   "accepted": [
+    "mum",
+    "mom",
+    "mummy"
+   ],
+   "verified": true,
+   "number": 29
+  },
+  {
+   "kind": "abcd",
+   "topic": "Slovná zásoba",
+   "prompt": "Čo znamená „Thank you“?",
+   "options": [
+    "ďakujem",
+    "prosím",
+    "ahoj",
+    "dovidenia"
+   ],
+   "correct": "A",
+   "explanation": "Thank you = ďakujem. Prosím (pri podaní) je please alebo here you are, ahoj = hello/hi, dovidenia = goodbye.",
+   "verified": true,
+   "number": 30
+  },
+  {
+   "kind": "abcd",
+   "topic": "Predložky a členy",
+   "prompt": "The book is ___ the bag.",
+   "options": [
+    "in",
+    "from",
+    "about",
+    "of"
+   ],
+   "correct": "A",
+   "explanation": "In = v. Kniha je v taške: in the bag. Ďalšie: on = na, under = pod.",
+   "verified": true,
+   "number": 31
+  },
+  {
+   "kind": "short",
+   "topic": "Predložky a členy",
+   "prompt": "Doplň predložku: I get up ___ 7 o’clock.",
+   "correct": "at",
+   "explanation": "Pri presnom čase používame at: at 7 o’clock, at noon. Preklad: Vstávam o siedmej.",
+   "accepted": [],
+   "verified": true,
+   "number": 32
+  },
+  {
+   "kind": "abcd",
+   "topic": "Modálne slovesá a podmienky",
+   "prompt": "___ I sit here?",
+   "options": [
+    "Can",
+    "Do",
+    "Is",
+    "Am"
+   ],
+   "correct": "A",
+   "explanation": "Can I…? sa používa pri žiadosti o dovolenie. Preklad: Môžem si sem sadnúť?",
+   "verified": true,
+   "number": 33
+  },
+  {
+   "kind": "abcd",
+   "topic": "Modálne slovesá a podmienky",
+   "prompt": "He ___ play the piano. He is great!",
+   "options": [
+    "is",
+    "can",
+    "cans",
+    "does"
+   ],
+   "correct": "B",
+   "explanation": "Can sa nikdy nemení a po ňom ide základný tvar slovesa: he can play. Preklad: Vie hrať na klavíri.",
+   "verified": true,
+   "number": 34
+  }
+ ]
+}

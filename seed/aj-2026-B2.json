@@ -1,0 +1,538 @@
+{
+ "test": {
+  "subject": "aj",
+  "year": 2026,
+  "variant": "B2",
+  "title": "Angličtina – B2 Pokročilý",
+  "duration_min": 40
+ },
+ "passages": [
+  {
+   "key": "u2",
+   "title": "Ukážka 2 – Plastic in the sea",
+   "body": "Every year, millions of tonnes of plastic end up in the oceans. Sea animals often mistake it for food, and many of them get sick. Scientists say that most plastic comes from the land, not from ships. Some towns now ban plastic bags, and volunteers clean beaches at weekends. Experts agree that the best solution is to use less plastic in the first place."
+  },
+  {
+   "key": "u7",
+   "title": "Ukážka 7 – Electric cars",
+   "body": "Electric cars are becoming more popular every year. They produce no exhaust fumes, which makes the air in cities cleaner. Nevertheless, many drivers hesitate to buy one because of the high price and the lack of charging stations. Governments in several countries offer financial support to encourage people to switch. Experts predict that within twenty years most new cars will be electric."
+  }
+ ],
+ "questions": [
+  {
+   "number": 1,
+   "kind": "abcd",
+   "topic": "Minulé a budúce časy",
+   "prompt": "Look at those clouds! It ___ rain.",
+   "options": [
+    "has",
+    "will be",
+    "was",
+    "is going to"
+   ],
+   "correct": "D",
+   "explanation": "Vidíme znak, že sa niečo stane: going to.",
+   "verified": true
+  },
+  {
+   "number": 2,
+   "kind": "abcd",
+   "topic": "Modálne slovesá a podmienky",
+   "prompt": "You ___ wear a seat belt. It is the law.",
+   "options": [
+    "must",
+    "may",
+    "might",
+    "can"
+   ],
+   "correct": "A",
+   "explanation": "Must vyjadruje povinnosť.",
+   "verified": true
+  },
+  {
+   "number": 3,
+   "kind": "abcd",
+   "topic": "Modálne slovesá a podmienky",
+   "prompt": "If it rains tomorrow, we ___ at home.",
+   "options": [
+    "will stay",
+    "stay",
+    "stayed",
+    "would stay"
+   ],
+   "correct": "A",
+   "explanation": "Reálna podmienka: if + prítomný čas, will.",
+   "verified": true
+  },
+  {
+   "number": 4,
+   "kind": "abcd",
+   "topic": "Modálne slovesá a podmienky",
+   "prompt": "If I ___ rich, I would buy a boat.",
+   "options": [
+    "were",
+    "will be",
+    "was",
+    "am"
+   ],
+   "correct": "A",
+   "explanation": "Nereálna podmienka: if I were.",
+   "verified": true
+  },
+  {
+   "number": 5,
+   "kind": "short",
+   "topic": "Modálne slovesá a podmienky",
+   "prompt": "Dopíš modálne sloveso: ___ I open the window? (Môžem otvoriť okno?)",
+   "correct": "Can",
+   "explanation": "Žiadosť o dovolenie: can, may alebo could.",
+   "accepted": [
+    "May",
+    "Could"
+   ],
+   "verified": true
+  },
+  {
+   "number": 6,
+   "kind": "abcd",
+   "topic": "Modálne slovesá a podmienky",
+   "prompt": "You ___ park here. It is forbidden.",
+   "options": [
+    "don’t have to",
+    "needn’t",
+    "mustn’t",
+    "may"
+   ],
+   "correct": "C",
+   "explanation": "Mustn’t = zákaz.",
+   "verified": true
+  },
+  {
+   "number": 7,
+   "kind": "abcd",
+   "topic": "Predložky a členy",
+   "prompt": "He denied ___ the window.",
+   "options": [
+    "break",
+    "broke",
+    "breaking",
+    "to break"
+   ],
+   "correct": "C",
+   "explanation": "Po slovese deny nasleduje tvar -ing.",
+   "verified": true
+  },
+  {
+   "kind": "abcd",
+   "topic": "Prítomné časy",
+   "prompt": "I ___ this song. It is great!",
+   "options": [
+    "am love",
+    "love",
+    "loves",
+    "am loving"
+   ],
+   "correct": "B",
+   "explanation": "Slovesá citov (love, like, hate) sa zvyčajne nepoužívajú v priebehovom čase.",
+   "verified": true,
+   "number": 8
+  },
+  {
+   "kind": "abcd",
+   "topic": "Minulé a budúce časy",
+   "prompt": "When I called him, he ___ dinner.",
+   "options": [
+    "had",
+    "was having",
+    "is having",
+    "has"
+   ],
+   "correct": "B",
+   "explanation": "Dej, ktorý prebiehal v danom okamihu v minulosti: past continuous.",
+   "verified": true,
+   "number": 9
+  },
+  {
+   "kind": "abcd",
+   "topic": "Minulé a budúce časy",
+   "prompt": "I ___ him since Monday.",
+   "options": [
+    "wasn’t seeing",
+    "didn’t see",
+    "haven’t seen",
+    "don’t see"
+   ],
+   "correct": "C",
+   "explanation": "Since + obdobie do dnes: present perfect (haven’t seen).",
+   "verified": true,
+   "number": 10
+  },
+  {
+   "kind": "abcd",
+   "topic": "Slovná zásoba",
+   "prompt": "Čo znamená „enough“?",
+   "options": [
+    "niekedy",
+    "dosť",
+    "ťažký",
+    "čoskoro"
+   ],
+   "correct": "B",
+   "explanation": "Enough = dosť, dostatočne.",
+   "verified": true,
+   "number": 11
+  },
+  {
+   "kind": "abcd",
+   "topic": "Slovná zásoba",
+   "prompt": "She is very ___. She never tells lies.",
+   "options": [
+    "rude",
+    "shy",
+    "lazy",
+    "honest"
+   ],
+   "correct": "D",
+   "explanation": "Honest = úprimný, čestný.",
+   "verified": true,
+   "number": 12
+  },
+  {
+   "kind": "abcd",
+   "topic": "Predložky a členy",
+   "prompt": "She lives ___ 25 Green Street.",
+   "options": [
+    "in",
+    "on",
+    "at",
+    "to"
+   ],
+   "correct": "C",
+   "explanation": "Pri presnej adrese s číslom: at.",
+   "verified": true,
+   "number": 13
+  },
+  {
+   "kind": "abcd",
+   "topic": "Predložky a členy",
+   "prompt": "We went ___ holiday last year.",
+   "options": [
+    "in",
+    "at",
+    "for",
+    "on"
+   ],
+   "correct": "D",
+   "explanation": "On holiday = na dovolenke.",
+   "verified": true,
+   "number": 14
+  },
+  {
+   "kind": "abcd",
+   "topic": "Modálne slovesá a podmienky",
+   "prompt": "If she ___ harder, she would pass the exam.",
+   "options": [
+    "studied",
+    "study",
+    "studies",
+    "will study"
+   ],
+   "correct": "A",
+   "explanation": "Nereálna podmienka: if + minulý čas, would.",
+   "verified": true,
+   "number": 15
+  },
+  {
+   "kind": "abcd",
+   "topic": "Modálne slovesá a podmienky",
+   "prompt": "I ___ to work yesterday because I was ill.",
+   "options": [
+    "couldn’t go",
+    "won’t go",
+    "can’t go",
+    "mustn’t go"
+   ],
+   "correct": "A",
+   "explanation": "Could = minulá forma can.",
+   "verified": true,
+   "number": 16
+  },
+  {
+   "number": 17,
+   "kind": "abcd",
+   "topic": "Čítanie s porozumením",
+   "prompt": "According to the text, where does most plastic come from?",
+   "options": [
+    "Rivers only",
+    "Fishermen",
+    "The land",
+    "Ships"
+   ],
+   "correct": "C",
+   "explanation": "Text hovorí o súši (the land).",
+   "verified": true,
+   "passage": "u2"
+  },
+  {
+   "number": 18,
+   "kind": "abcd",
+   "topic": "Čítanie s porozumením",
+   "prompt": "What do experts recommend?",
+   "options": [
+    "Cleaning beaches only.",
+    "Banning all ships.",
+    "Feeding sea animals.",
+    "Using less plastic."
+   ],
+   "correct": "D",
+   "explanation": "Najlepšie riešenie je používať menej plastu.",
+   "verified": true,
+   "passage": "u2"
+  },
+  {
+   "kind": "abcd",
+   "topic": "Čítanie s porozumením",
+   "prompt": "What do sea animals often mistake plastic for?",
+   "options": [
+    "Toys",
+    "Food",
+    "Ships",
+    "Stones"
+   ],
+   "correct": "B",
+   "explanation": "Zvieratá si plast často pomýlia s potravou.",
+   "verified": true,
+   "passage": "u2",
+   "number": 19
+  },
+  {
+   "kind": "abcd",
+   "topic": "Čítanie s porozumením",
+   "prompt": "What do volunteers do at weekends?",
+   "options": [
+    "Ban plastic bags.",
+    "Clean beaches.",
+    "Feed animals.",
+    "Build ships."
+   ],
+   "correct": "B",
+   "explanation": "Dobrovoľníci cez víkendy čistia pláže.",
+   "verified": true,
+   "passage": "u2",
+   "number": 20
+  },
+  {
+   "kind": "abcd",
+   "topic": "Prítomné časy",
+   "prompt": "I ___ here since 8 o’clock.",
+   "options": [
+    "am waiting",
+    "wait",
+    "have been waiting",
+    "waited"
+   ],
+   "correct": "C",
+   "explanation": "Since + čas začiatku, dej trvá do dnes: present perfect continuous (have been waiting).",
+   "verified": true,
+   "number": 21
+  },
+  {
+   "kind": "abcd",
+   "topic": "Predložky a členy",
+   "prompt": "I look forward ___ you.",
+   "options": [
+    "see",
+    "to seeing",
+    "seeing",
+    "to see"
+   ],
+   "correct": "B",
+   "explanation": "Look forward to + sloveso s -ing (to je tu predložka): I look forward to seeing you.",
+   "verified": true,
+   "number": 22
+  },
+  {
+   "kind": "abcd",
+   "topic": "Slovná zásoba",
+   "prompt": "He made a big ___ by saying that.",
+   "options": [
+    "failure",
+    "wrong",
+    "fault",
+    "mistake"
+   ],
+   "correct": "D",
+   "explanation": "Správne spojenie je make a mistake (urobiť chybu).",
+   "verified": true,
+   "number": 23
+  },
+  {
+   "kind": "abcd",
+   "topic": "Modálne slovesá a podmienky",
+   "prompt": "If I ___ you, I would apologise.",
+   "options": [
+    "was",
+    "am",
+    "be",
+    "were"
+   ],
+   "correct": "D",
+   "explanation": "Rada v nereálnej podmienke: If I were you, I would… (pri I sa používa were).",
+   "verified": true,
+   "number": 24
+  },
+  {
+   "kind": "abcd",
+   "topic": "Prítomné časy",
+   "prompt": "She ___ for the company for ten years now.",
+   "options": [
+    "has been working",
+    "is working",
+    "works",
+    "worked"
+   ],
+   "correct": "A",
+   "explanation": "For + doba trvania, dej trvá do dnes: present perfect continuous (has been working).",
+   "verified": true,
+   "number": 25
+  },
+  {
+   "kind": "abcd",
+   "topic": "Minulé a budúce časy",
+   "prompt": "I ___ my keys when I got home, so I could not get in.",
+   "options": [
+    "was losing",
+    "lost",
+    "have lost",
+    "had lost"
+   ],
+   "correct": "D",
+   "explanation": "Dej, ktorý prebehol skôr ako iný dej v minulosti: past perfect (had + 3. tvar).",
+   "verified": true,
+   "number": 26
+  },
+  {
+   "kind": "abcd",
+   "topic": "Minulé a budúce časy",
+   "prompt": "He promised that he ___ me the next day.",
+   "options": [
+    "has called",
+    "would call",
+    "calls",
+    "called"
+   ],
+   "correct": "B",
+   "explanation": "V nepriamej reči sa will mení na would.",
+   "verified": true,
+   "number": 27
+  },
+  {
+   "kind": "abcd",
+   "topic": "Slovná zásoba",
+   "prompt": "Which word means “to make something better”?",
+   "options": [
+    "ignore",
+    "decrease",
+    "damage",
+    "improve"
+   ],
+   "correct": "D",
+   "explanation": "Improve = zlepšiť. Decrease = znížiť, damage = poškodiť.",
+   "verified": true,
+   "number": 28
+  },
+  {
+   "kind": "abcd",
+   "topic": "Slovná zásoba",
+   "prompt": "The film was so ___ that I fell asleep.",
+   "options": [
+    "bored",
+    "bore",
+    "boredom",
+    "boring"
+   ],
+   "correct": "D",
+   "explanation": "Prídavné meno na -ing popisuje vec (boring film), na -ed pocit človeka (I was bored).",
+   "verified": true,
+   "number": 29
+  },
+  {
+   "kind": "abcd",
+   "topic": "Predložky a členy",
+   "prompt": "She succeeded ___ passing the exam.",
+   "options": [
+    "in",
+    "at",
+    "with",
+    "on"
+   ],
+   "correct": "A",
+   "explanation": "Succeed in + sloveso s -ing.",
+   "verified": true,
+   "number": 30
+  },
+  {
+   "kind": "abcd",
+   "topic": "Modálne slovesá a podmienky",
+   "prompt": "If we ___ earlier, we would not have missed the bus.",
+   "options": [
+    "leave",
+    "would leave",
+    "left",
+    "had left"
+   ],
+   "correct": "D",
+   "explanation": "Nereálna podmienka v minulosti: if + past perfect, would have + 3. tvar.",
+   "verified": true,
+   "number": 31
+  },
+  {
+   "kind": "abcd",
+   "topic": "Čítanie s porozumením",
+   "prompt": "Why do some drivers hesitate to buy an electric car?",
+   "options": [
+    "Because of the price and few charging stations.",
+    "They need more fuel.",
+    "They are too slow.",
+    "They pollute the air."
+   ],
+   "correct": "A",
+   "explanation": "V texte: „high price and the lack of charging stations“.",
+   "verified": true,
+   "passage": "u7",
+   "number": 32
+  },
+  {
+   "kind": "abcd",
+   "topic": "Čítanie s porozumením",
+   "prompt": "What do governments do?",
+   "options": [
+    "They build new cars.",
+    "They ban all petrol cars now.",
+    "They offer financial support.",
+    "They lower petrol prices."
+   ],
+   "correct": "C",
+   "explanation": "V texte: „offer financial support to encourage people to switch“.",
+   "verified": true,
+   "passage": "u7",
+   "number": 33
+  },
+  {
+   "kind": "abcd",
+   "topic": "Čítanie s porozumením",
+   "prompt": "What do experts predict?",
+   "options": [
+    "Fewer people will drive.",
+    "Cars will become cheaper.",
+    "Most new cars will be electric.",
+    "Electric cars will disappear."
+   ],
+   "correct": "C",
+   "explanation": "V texte: „within twenty years most new cars will be electric“.",
+   "verified": true,
+   "passage": "u7",
+   "number": 34
+  }
+ ]
+}

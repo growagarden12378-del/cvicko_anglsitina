@@ -13,6 +13,7 @@ export async function GET(req: Request) {
     .map(Number)
     .filter((n) => Number.isInteger(n) && n > 0)
     .slice(0, 100);
+  const levels = (sp.get('levels') ?? '').split(',').map((t) => t.trim()).filter(Boolean);
   const limit = Math.min(Number(sp.get('limit')) || 10, 100);
 
   const where: string[] = [];
@@ -28,6 +29,10 @@ export async function GET(req: Request) {
     if (testId) {
       params.push(testId);
       where.push(`q.test_id = $${params.length}`);
+    }
+    if (levels.length && !testId) {
+      params.push(levels);
+      where.push(`t.variant = any($${params.length}::text[])`);
     }
     if (topics.length) {
       params.push(topics);

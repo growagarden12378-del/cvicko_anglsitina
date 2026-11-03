@@ -1,0 +1,404 @@
+{
+ "test": {
+  "subject": "aj",
+  "year": 2026,
+  "variant": "C1",
+  "title": "Angličtina – C1 Expert",
+  "duration_min": 35
+ },
+ "passages": [
+  {
+   "key": "u4",
+   "title": "Ukážka 4 – Remote work",
+   "body": "More and more companies allow their employees to work from home. Supporters argue that it saves time and money, because people do not have to commute. However, critics warn that workers may feel isolated and find it hard to separate work from private life. A recent study suggests that the most successful model is a mix of both: two or three days at home and the rest in the office."
+  },
+  {
+   "key": "u8",
+   "title": "Ukážka 8 – The value of sleep",
+   "body": "Although many people believe that they can function perfectly well on five hours of sleep, research suggests otherwise. Chronic sleep deprivation has been linked to poor concentration, weakened immunity and even a higher risk of heart disease. Researchers stress that it is not only the quantity of sleep that matters, but also its quality: regular bedtimes and a dark, quiet room can make a considerable difference."
+  }
+ ],
+ "questions": [
+  {
+   "number": 1,
+   "kind": "abcd",
+   "topic": "Minulé a budúce časy",
+   "prompt": "By 2020 she ___ in London for five years.",
+   "options": [
+    "lives",
+    "has lived",
+    "was living",
+    "had lived"
+   ],
+   "correct": "D",
+   "explanation": "By 2020 odkazuje na minulosť: predminulý čas (past perfect).",
+   "verified": true
+  },
+  {
+   "kind": "abcd",
+   "topic": "Prítomné časy",
+   "prompt": "Which sentence is correct?",
+   "options": [
+    "She doesn’t likes fish.",
+    "She not like fish.",
+    "She don’t like fish.",
+    "She doesn’t like fish."
+   ],
+   "correct": "D",
+   "explanation": "Po does not nasleduje základný tvar slovesa bez -s.",
+   "verified": true,
+   "number": 2
+  },
+  {
+   "kind": "abcd",
+   "topic": "Modálne slovesá a podmienky",
+   "prompt": "If she ___ harder, she would pass the exam.",
+   "options": [
+    "will study",
+    "studied",
+    "study",
+    "studies"
+   ],
+   "correct": "B",
+   "explanation": "Nereálna podmienka: if + minulý čas, would.",
+   "verified": true,
+   "number": 3
+  },
+  {
+   "kind": "abcd",
+   "topic": "Minulé a budúce časy",
+   "prompt": "By the time she is 30, she ___ three languages.",
+   "options": [
+    "will learn",
+    "learns",
+    "will have learned",
+    "is learning"
+   ],
+   "correct": "C",
+   "explanation": "By the time + budúci bod: future perfect (will have + 3. tvar), dej bude dokončený skôr.",
+   "verified": true,
+   "number": 4
+  },
+  {
+   "kind": "abcd",
+   "topic": "Prítomné časy",
+   "prompt": "Not only ___ late, but he also forgot his books.",
+   "options": [
+    "was he",
+    "he is",
+    "he was",
+    "did he"
+   ],
+   "correct": "A",
+   "explanation": "Po „Not only“ na začiatku vety nasleduje obrátený slovosled: Not only was he late…",
+   "verified": true,
+   "number": 5
+  },
+  {
+   "kind": "abcd",
+   "topic": "Slovná zásoba",
+   "prompt": "Čo znamená „reluctant“?",
+   "options": [
+    "nahnevaný",
+    "neochotný",
+    "unavený",
+    "ochotný"
+   ],
+   "correct": "B",
+   "explanation": "Reluctant = neochotný, zdráhavý. Opak: willing = ochotný.",
+   "verified": true,
+   "number": 6
+  },
+  {
+   "kind": "abcd",
+   "topic": "Slovná zásoba",
+   "prompt": "The company decided to ___ the project due to high costs.",
+   "options": [
+    "abandon",
+    "admire",
+    "remain",
+    "adopt"
+   ],
+   "correct": "A",
+   "explanation": "Abandon = opustiť, zrušiť. Adopt = prijať, remain = zostať.",
+   "verified": true,
+   "number": 7
+  },
+  {
+   "kind": "abcd",
+   "topic": "Modálne slovesá a podmienky",
+   "prompt": "She ___ have left already; her coat is gone.",
+   "options": [
+    "should",
+    "can",
+    "would",
+    "must"
+   ],
+   "correct": "D",
+   "explanation": "Must have + 3. tvar = takmer istý odhad o minulosti.",
+   "verified": true,
+   "number": 8
+  },
+  {
+   "kind": "abcd",
+   "topic": "Modálne slovesá a podmienky",
+   "prompt": "Had I known about the traffic, I ___ earlier.",
+   "options": [
+    "will leave",
+    "would leave",
+    "left",
+    "would have left"
+   ],
+   "correct": "D",
+   "explanation": "Inverzia z podmienky: Had I known = If I had known. Výsledok: would have + 3. tvar.",
+   "verified": true,
+   "number": 9
+  },
+  {
+   "kind": "abcd",
+   "topic": "Predložky a členy",
+   "prompt": "He is responsible ___ the whole project.",
+   "options": [
+    "at",
+    "for",
+    "to",
+    "of"
+   ],
+   "correct": "B",
+   "explanation": "Responsible for = zodpovedný za niečo.",
+   "verified": true,
+   "number": 10
+  },
+  {
+   "kind": "abcd",
+   "topic": "Predložky a členy",
+   "prompt": "She is not used ___ the cold weather.",
+   "options": [
+    "to",
+    "for",
+    "with",
+    "at"
+   ],
+   "correct": "A",
+   "explanation": "Be used to + podstatné meno / -ing = byť zvyknutý na niečo.",
+   "verified": true,
+   "number": 11
+  },
+  {
+   "kind": "abcd",
+   "topic": "Minulé a budúce časy",
+   "prompt": "No sooner had I arrived ___ the phone rang.",
+   "options": [
+    "than",
+    "then",
+    "that",
+    "when"
+   ],
+   "correct": "A",
+   "explanation": "Po no sooner vždy nasleduje than (nie when).",
+   "verified": true,
+   "number": 12
+  },
+  {
+   "kind": "abcd",
+   "topic": "Čítanie s porozumením",
+   "prompt": "What do supporters of remote work say?",
+   "options": [
+    "It is cheaper for companies only.",
+    "It makes people lonely.",
+    "It saves time and money.",
+    "It is always more productive."
+   ],
+   "correct": "C",
+   "explanation": "Podľa textu ušetrí čas aj peniaze, pretože ľudia nemusia dochádzať.",
+   "verified": true,
+   "passage": "u4",
+   "number": 13
+  },
+  {
+   "kind": "abcd",
+   "topic": "Čítanie s porozumením",
+   "prompt": "Which word is closest in meaning to “commute”?",
+   "options": [
+    "travel to work",
+    "change jobs",
+    "work overtime",
+    "take a holiday"
+   ],
+   "correct": "A",
+   "explanation": "Commute = dochádzať do práce.",
+   "verified": true,
+   "passage": "u4",
+   "number": 14
+  },
+  {
+   "kind": "abcd",
+   "topic": "Čítanie s porozumením",
+   "prompt": "What does the study suggest?",
+   "options": [
+    "Everybody should work at home.",
+    "A mix of home and office work works best.",
+    "Offices will disappear.",
+    "Workers prefer long journeys."
+   ],
+   "correct": "B",
+   "explanation": "Štúdia odporúča kombináciu práce z domu aj z kancelárie.",
+   "verified": true,
+   "passage": "u4",
+   "number": 15
+  },
+  {
+   "kind": "abcd",
+   "topic": "Prítomné časy",
+   "prompt": "It is high time we ___ home.",
+   "options": [
+    "will go",
+    "had gone",
+    "went",
+    "go"
+   ],
+   "correct": "C",
+   "explanation": "Po „It is high time“ nasleduje minulý čas (nereálna prítomnosť): it is high time we went.",
+   "verified": true,
+   "number": 16
+  },
+  {
+   "kind": "abcd",
+   "topic": "Minulé a budúce časy",
+   "prompt": "I would rather you ___ me the truth yesterday.",
+   "options": [
+    "tell",
+    "had told",
+    "would tell",
+    "told"
+   ],
+   "correct": "B",
+   "explanation": "Would rather + minulosť: past perfect (had told).",
+   "verified": true,
+   "number": 17
+  },
+  {
+   "kind": "abcd",
+   "topic": "Slovná zásoba",
+   "prompt": "Čo znamená „ubiquitous“?",
+   "options": [
+    "všadeprítomný",
+    "vzácny",
+    "starobylý",
+    "nebezpečný"
+   ],
+   "correct": "A",
+   "explanation": "Ubiquitous = všadeprítomný, vyskytujúci sa všade.",
+   "verified": true,
+   "number": 18
+  },
+  {
+   "kind": "abcd",
+   "topic": "Slovná zásoba",
+   "prompt": "Choose the word closest in meaning to “scarce”.",
+   "options": [
+    "plentiful",
+    "heavy",
+    "cheap",
+    "rare"
+   ],
+   "correct": "D",
+   "explanation": "Scarce = nedostatkový, vzácny. Opak: plentiful = hojný.",
+   "verified": true,
+   "number": 19
+  },
+  {
+   "kind": "abcd",
+   "topic": "Predložky a členy",
+   "prompt": "She takes great pride ___ her work.",
+   "options": [
+    "on",
+    "at",
+    "of",
+    "in"
+   ],
+   "correct": "D",
+   "explanation": "Take pride in = byť hrdý na niečo.",
+   "verified": true,
+   "number": 20
+  },
+  {
+   "kind": "abcd",
+   "topic": "Modálne slovesá a podmienky",
+   "prompt": "You ___ have told me earlier! Now it is too late.",
+   "options": [
+    "can",
+    "shall",
+    "could",
+    "will"
+   ],
+   "correct": "C",
+   "explanation": "Could have + 3. tvar = výčitka (mohol si mi to povedať).",
+   "verified": true,
+   "number": 21
+  },
+  {
+   "kind": "abcd",
+   "topic": "Modálne slovesá a podmienky",
+   "prompt": "Were it not for your help, I ___ failed.",
+   "options": [
+    "would",
+    "had",
+    "will have",
+    "would have"
+   ],
+   "correct": "D",
+   "explanation": "Inverzia: Were it not for = If it were not for. Výsledok: would have + 3. tvar.",
+   "verified": true,
+   "number": 22
+  },
+  {
+   "kind": "abcd",
+   "topic": "Čítanie s porozumením",
+   "prompt": "What does research suggest about five hours of sleep?",
+   "options": [
+    "It is enough for most people.",
+    "It is not enough for most people.",
+    "It is ideal for adults.",
+    "It improves concentration."
+   ],
+   "correct": "B",
+   "explanation": "V texte výskum naznačuje, že päť hodín spánku nestačí.",
+   "verified": true,
+   "passage": "u8",
+   "number": 23
+  },
+  {
+   "kind": "abcd",
+   "topic": "Čítanie s porozumením",
+   "prompt": "Which result of sleep deprivation is mentioned?",
+   "options": [
+    "Faster growth",
+    "A higher risk of heart disease",
+    "Better memory",
+    "Stronger muscles"
+   ],
+   "correct": "B",
+   "explanation": "V texte: „a higher risk of heart disease“.",
+   "verified": true,
+   "passage": "u8",
+   "number": 24
+  },
+  {
+   "kind": "abcd",
+   "topic": "Čítanie s porozumením",
+   "prompt": "What can improve the quality of sleep?",
+   "options": [
+    "Sleeping more at weekends",
+    "Drinking coffee in the evening",
+    "Watching TV in bed",
+    "Regular bedtimes and a dark, quiet room"
+   ],
+   "correct": "D",
+   "explanation": "V texte: „regular bedtimes and a dark, quiet room“.",
+   "verified": true,
+   "passage": "u8",
+   "number": 25
+  }
+ ]
+}

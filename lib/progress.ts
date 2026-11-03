@@ -1,4 +1,5 @@
 import { halloweenActive, xpMultiplier } from './event';
+import { CEFR } from './cefr';
 import { ITEMS, MAGNET, itemById } from './shop';
 // Postup žiaka sa ukladá v prehliadači (localStorage) a, ak je prihlásený, aj na server (účet).
 
@@ -95,15 +96,16 @@ export function topicKey(subject: string, topic: string): string {
   return `${subject}|${topic}`;
 }
 
-// Úroveň 2 = 40 XP, úroveň 3 = 160 XP, úroveň 4 = 360 XP, ...
+// Úrovne angličtiny A1–C1; XP potrebné na každú sú v lib/cefr.ts
 export function levelInfo(xp: number) {
-  const level = 1 + Math.floor(Math.sqrt(xp / 40));
-  const lo = 40 * (level - 1) ** 2;
-  const hi = 40 * level ** 2;
-  return { level, into: xp - lo, span: hi - lo };
+  let i = 0;
+  while (i + 1 < CEFR.length && xp >= CEFR[i + 1].from) i++;
+  const lo = CEFR[i].from;
+  const next = CEFR[i + 1];
+  const span = next ? next.from - lo : 1;
+  return { level: i + 1, code: CEFR[i].code, name: CEFR[i].name, into: next ? xp - lo : 1, span, max: !next, nextXp: next ? next.from - xp : 0 };
 }
 
-// Počet dní po sebe, v ktorých žiak vyriešil aspoň jednu úlohu. Dnešok sa nepočíta ako prerušenie, kým neskončí.
 export function streak(days: Record<string, number>): number {
   const d = new Date();
   if (!days[dayKey(d)]) d.setDate(d.getDate() - 1);

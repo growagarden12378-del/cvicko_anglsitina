@@ -1,0 +1,587 @@
+{
+ "test": {
+  "subject": "aj",
+  "year": 2026,
+  "variant": "B1",
+  "title": "Angličtina – B1 Stredne pokročilý",
+  "duration_min": 40
+ },
+ "passages": [
+  {
+   "key": "u1",
+   "title": "Ukážka 1 – Tom’s new school",
+   "body": "Tom started at a new school in September. At first he felt nervous because he did not know anyone. On the first day, a girl called Mia showed him the library and the canteen. They both love chess, so they joined the school chess club. Now Tom meets his new friends there every Wednesday after lessons. He says that moving to a new school was scary, but it was worth it."
+  },
+  {
+   "key": "u6",
+   "title": "Ukážka 6 – A lost dog",
+   "body": "Last Saturday, Emma was walking in the park when she found a small brown dog. It had no collar, so she took it home and put up posters in the neighbourhood. Two days later, an old man called. His dog, Max, had run away during a storm. He was very happy and gave Emma a box of chocolates to say thank you. Emma says that she would like to get her own dog one day."
+  }
+ ],
+ "questions": [
+  {
+   "number": 1,
+   "kind": "short",
+   "topic": "Prítomné časy",
+   "prompt": "Dopíš správny tvar: She ___ (not like) coffee.",
+   "correct": "does not like",
+   "explanation": "Záporná veta v 3. osobe: does not + základný tvar.",
+   "accepted": [
+    "doesn't like",
+    "doesn’t like",
+    "doesnt like"
+   ],
+   "verified": true
+  },
+  {
+   "number": 2,
+   "kind": "short",
+   "topic": "Prítomné časy",
+   "prompt": "Dopíš sloveso v správnom tvare: Look! It ___ (rain).",
+   "correct": "is raining",
+   "explanation": "Look! signalizuje dej, ktorý prebieha teraz.",
+   "accepted": [],
+   "verified": true
+  },
+  {
+   "number": 3,
+   "kind": "abcd",
+   "topic": "Minulé a budúce časy",
+   "prompt": "I ___ my keys yesterday.",
+   "options": [
+    "lose",
+    "loses",
+    "lost",
+    "losed"
+   ],
+   "correct": "C",
+   "explanation": "Lose – lost – lost.",
+   "verified": true
+  },
+  {
+   "number": 4,
+   "kind": "abcd",
+   "topic": "Minulé a budúce časy",
+   "prompt": "Tomorrow I ___ my grandmother.",
+   "options": [
+    "visit",
+    "have visited",
+    "visited",
+    "will visit"
+   ],
+   "correct": "D",
+   "explanation": "Rozhodnutie alebo predpoveď o budúcnosti: will + základný tvar.",
+   "verified": true
+  },
+  {
+   "number": 5,
+   "kind": "short",
+   "topic": "Minulé a budúce časy",
+   "prompt": "Dopíš minulý čas: He ___ (write) a letter last week.",
+   "correct": "wrote",
+   "explanation": "Write – wrote – written.",
+   "accepted": [],
+   "verified": true
+  },
+  {
+   "number": 6,
+   "kind": "abcd",
+   "topic": "Slovná zásoba",
+   "prompt": "Which word is the opposite of “generous”?",
+   "options": [
+    "rich",
+    "mean",
+    "happy",
+    "kind"
+   ],
+   "correct": "B",
+   "explanation": "Generous = štedrý, mean = lakomý.",
+   "verified": true
+  },
+  {
+   "number": 7,
+   "kind": "abcd",
+   "topic": "Slovná zásoba",
+   "prompt": "I need to ___ a decision before Friday.",
+   "options": [
+    "do",
+    "make",
+    "give",
+    "have"
+   ],
+   "correct": "B",
+   "explanation": "Správne spojenie je make a decision.",
+   "verified": true
+  },
+  {
+   "number": 8,
+   "kind": "abcd",
+   "topic": "Predložky a členy",
+   "prompt": "We arrived ___ the airport at noon.",
+   "options": [
+    "to",
+    "in",
+    "at",
+    "on"
+   ],
+   "correct": "C",
+   "explanation": "Arrive at pri menších miestach, arrive in pri mestách.",
+   "verified": true
+  },
+  {
+   "number": 9,
+   "kind": "abcd",
+   "topic": "Predložky a členy",
+   "prompt": "___ Sun rises in the east.",
+   "options": [
+    "The",
+    "A",
+    "An",
+    "–"
+   ],
+   "correct": "A",
+   "explanation": "Jedinečné veci majú člen the.",
+   "verified": true
+  },
+  {
+   "number": 10,
+   "kind": "abcd",
+   "topic": "Čítanie s porozumením",
+   "prompt": "Why did Tom feel nervous at first?",
+   "options": [
+    "He was late.",
+    "He did not know anyone.",
+    "He did not like chess.",
+    "He lost his bag."
+   ],
+   "correct": "B",
+   "explanation": "V texte: he did not know anyone.",
+   "verified": true,
+   "passage": "u1"
+  },
+  {
+   "number": 11,
+   "kind": "abcd",
+   "topic": "Čítanie s porozumením",
+   "prompt": "What do Tom and Mia have in common?",
+   "options": [
+    "They live on one street.",
+    "They both love chess.",
+    "They are in the same class.",
+    "They both like the canteen."
+   ],
+   "correct": "B",
+   "explanation": "V texte: They both love chess.",
+   "verified": true,
+   "passage": "u1"
+  },
+  {
+   "number": 12,
+   "kind": "short",
+   "topic": "Čítanie s porozumením",
+   "prompt": "Napíš, v ktorý deň sa schádza šachový klub (jedno slovo):",
+   "correct": "Wednesday",
+   "explanation": "Klub sa schádza každú stredu.",
+   "accepted": [],
+   "verified": true,
+   "passage": "u1"
+  },
+  {
+   "kind": "abcd",
+   "topic": "Prítomné časy",
+   "prompt": "Listen! Someone ___ at the door.",
+   "options": [
+    "is knocking",
+    "knocks",
+    "knock",
+    "knocked"
+   ],
+   "correct": "A",
+   "explanation": "Dej, ktorý práve počuješ, je prítomný priebehový čas.",
+   "verified": true,
+   "number": 13
+  },
+  {
+   "kind": "abcd",
+   "topic": "Prítomné časy",
+   "prompt": "How often ___ your sister visit you?",
+   "options": [
+    "are",
+    "does",
+    "is",
+    "do"
+   ],
+   "correct": "B",
+   "explanation": "Otázka s your sister (she) používa does.",
+   "verified": true,
+   "number": 14
+  },
+  {
+   "kind": "short",
+   "topic": "Prítomné časy",
+   "prompt": "Dopíš správny tvar: Water ___ (boil) at 100 degrees.",
+   "correct": "boils",
+   "explanation": "Všeobecná pravda = present simple a pri it pridáme -s.",
+   "accepted": [],
+   "verified": true,
+   "number": 15
+  },
+  {
+   "kind": "abcd",
+   "topic": "Minulé a budúce časy",
+   "prompt": "___ you at home yesterday?",
+   "options": [
+    "Were",
+    "Did",
+    "Do",
+    "Was"
+   ],
+   "correct": "A",
+   "explanation": "S you sa v minulosti používa were.",
+   "verified": true,
+   "number": 16
+  },
+  {
+   "kind": "abcd",
+   "topic": "Minulé a budúce časy",
+   "prompt": "I think it ___ tomorrow.",
+   "options": [
+    "rains",
+    "is rain",
+    "rained",
+    "will rain"
+   ],
+   "correct": "D",
+   "explanation": "Predpoveď o budúcnosti: will + základný tvar.",
+   "verified": true,
+   "number": 17
+  },
+  {
+   "kind": "short",
+   "topic": "Minulé a budúce časy",
+   "prompt": "Dopíš minulý čas: They ___ (not come) to the party.",
+   "correct": "did not come",
+   "explanation": "Záporná veta v minulosti: did not + základný tvar.",
+   "accepted": [
+    "didn't come",
+    "didn’t come",
+    "didnt come"
+   ],
+   "verified": true,
+   "number": 18
+  },
+  {
+   "kind": "abcd",
+   "topic": "Slovná zásoba",
+   "prompt": "Which word is a fruit?",
+   "options": [
+    "onion",
+    "carrot",
+    "pear",
+    "potato"
+   ],
+   "correct": "C",
+   "explanation": "Pear = hruška, ostatné sú zelenina.",
+   "verified": true,
+   "number": 19
+  },
+  {
+   "kind": "abcd",
+   "topic": "Slovná zásoba",
+   "prompt": "The opposite of “early” is ___.",
+   "options": [
+    "soon",
+    "late",
+    "slow",
+    "fast"
+   ],
+   "correct": "B",
+   "explanation": "Early = skoro, late = neskoro.",
+   "verified": true,
+   "number": 20
+  },
+  {
+   "kind": "short",
+   "topic": "Slovná zásoba",
+   "prompt": "Dopíš slovo: Frozen water is ______.",
+   "correct": "ice",
+   "explanation": "Ice = ľad.",
+   "accepted": [],
+   "verified": true,
+   "number": 21
+  },
+  {
+   "kind": "abcd",
+   "topic": "Predložky a členy",
+   "prompt": "I am afraid ___ spiders.",
+   "options": [
+    "at",
+    "of",
+    "for",
+    "from"
+   ],
+   "correct": "B",
+   "explanation": "Afraid of = báť sa niečoho.",
+   "verified": true,
+   "number": 22
+  },
+  {
+   "kind": "abcd",
+   "topic": "Predložky a členy",
+   "prompt": "He plays ___ guitar.",
+   "options": [
+    "–",
+    "the",
+    "a",
+    "an"
+   ],
+   "correct": "B",
+   "explanation": "Pri hudobných nástrojoch používame the: play the guitar.",
+   "verified": true,
+   "number": 23
+  },
+  {
+   "kind": "short",
+   "topic": "Predložky a členy",
+   "prompt": "Doplň predložku: I am interested ___ music.",
+   "correct": "in",
+   "explanation": "Interested in = zaujímať sa o niečo.",
+   "accepted": [],
+   "verified": true,
+   "number": 24
+  },
+  {
+   "kind": "abcd",
+   "topic": "Modálne slovesá a podmienky",
+   "prompt": "You look tired. You ___ go to bed early.",
+   "options": [
+    "should",
+    "would",
+    "can",
+    "did"
+   ],
+   "correct": "A",
+   "explanation": "Should = mal by si (rada).",
+   "verified": true,
+   "number": 25
+  },
+  {
+   "kind": "abcd",
+   "topic": "Modálne slovesá a podmienky",
+   "prompt": "If you heat ice, it ___.",
+   "options": [
+    "melting",
+    "melt",
+    "melts",
+    "melted"
+   ],
+   "correct": "C",
+   "explanation": "Všeobecná pravda: if + prítomný čas, prítomný čas.",
+   "verified": true,
+   "number": 26
+  },
+  {
+   "kind": "short",
+   "topic": "Modálne slovesá a podmienky",
+   "prompt": "Dopíš správny tvar: If it ___ (be) sunny tomorrow, we will go swimming.",
+   "correct": "is",
+   "explanation": "Po if v reálnej podmienke používame prítomný čas.",
+   "accepted": [],
+   "verified": true,
+   "number": 27
+  },
+  {
+   "kind": "abcd",
+   "topic": "Čítanie s porozumením",
+   "prompt": "Who showed Tom the library?",
+   "options": [
+    "Nobody",
+    "His teacher",
+    "Mia",
+    "His mother"
+   ],
+   "correct": "C",
+   "explanation": "Knižnicu mu ukázala Mia.",
+   "verified": true,
+   "passage": "u1",
+   "number": 28
+  },
+  {
+   "kind": "abcd",
+   "topic": "Čítanie s porozumením",
+   "prompt": "What does Tom say about moving to a new school?",
+   "options": [
+    "It was easy and boring.",
+    "It was a mistake.",
+    "It was too expensive.",
+    "It was scary, but it was worth it."
+   ],
+   "correct": "D",
+   "explanation": "Bolo to strašidelné, ale oplatilo sa.",
+   "verified": true,
+   "passage": "u1",
+   "number": 29
+  },
+  {
+   "kind": "short",
+   "topic": "Čítanie s porozumením",
+   "prompt": "Napíš, v ktorom mesiaci Tom začal v novej škole (jedno slovo):",
+   "correct": "September",
+   "explanation": "Tom začal v septembri.",
+   "accepted": [],
+   "verified": true,
+   "passage": "u1",
+   "number": 30
+  },
+  {
+   "kind": "abcd",
+   "topic": "Prítomné časy",
+   "prompt": "Have you ever ___ to London?",
+   "options": [
+    "been",
+    "was",
+    "gone",
+    "being"
+   ],
+   "correct": "A",
+   "explanation": "Present perfect: have/has + 3. tvar slovesa. Be – was/were – been. Ever = niekedy v živote.",
+   "verified": true,
+   "number": 31
+  },
+  {
+   "kind": "abcd",
+   "topic": "Prítomné časy",
+   "prompt": "I ___ in this city since I was born.",
+   "options": [
+    "lived",
+    "live",
+    "have lived",
+    "am living"
+   ],
+   "correct": "C",
+   "explanation": "Since + začiatok obdobia a dej trvá doteraz: present perfect (have lived).",
+   "verified": true,
+   "number": 32
+  },
+  {
+   "kind": "abcd",
+   "topic": "Minulé a budúce časy",
+   "prompt": "He ___ his homework when I called.",
+   "options": [
+    "did",
+    "was doing",
+    "does",
+    "has done"
+   ],
+   "correct": "B",
+   "explanation": "Past continuous (was/were + -ing) opisuje dej, ktorý prebiehal v danom okamihu v minulosti.",
+   "verified": true,
+   "number": 33
+  },
+  {
+   "kind": "abcd",
+   "topic": "Slovná zásoba",
+   "prompt": "Which word means the same as “enormous”?",
+   "options": [
+    "tiny",
+    "quiet",
+    "huge",
+    "slow"
+   ],
+   "correct": "C",
+   "explanation": "Enormous = obrovský, rovnako ako huge. Opak: tiny = drobný.",
+   "verified": true,
+   "number": 34
+  },
+  {
+   "kind": "abcd",
+   "topic": "Slovná zásoba",
+   "prompt": "I am looking ___ my keys.",
+   "options": [
+    "up",
+    "after",
+    "for",
+    "at"
+   ],
+   "correct": "C",
+   "explanation": "Look for = hľadať, look at = pozerať sa na, look after = starať sa o.",
+   "verified": true,
+   "number": 35
+  },
+  {
+   "kind": "abcd",
+   "topic": "Predložky a členy",
+   "prompt": "She apologised ___ being late.",
+   "options": [
+    "for",
+    "of",
+    "about",
+    "to"
+   ],
+   "correct": "A",
+   "explanation": "Apologise for = ospravedlniť sa za niečo.",
+   "verified": true,
+   "number": 36
+  },
+  {
+   "kind": "abcd",
+   "topic": "Modálne slovesá a podmienky",
+   "prompt": "If you do not hurry, you ___ the train.",
+   "options": [
+    "miss",
+    "will miss",
+    "would miss",
+    "missed"
+   ],
+   "correct": "B",
+   "explanation": "Reálna podmienka: if + prítomný čas, will + základný tvar.",
+   "verified": true,
+   "number": 37
+  },
+  {
+   "kind": "abcd",
+   "topic": "Čítanie s porozumením",
+   "prompt": "Why did Emma put up posters?",
+   "options": [
+    "To advertise the park.",
+    "To find a new dog.",
+    "To sell the dog.",
+    "To find the owner of the dog."
+   ],
+   "correct": "D",
+   "explanation": "Emma nechcela psa nechať, preto hľadala majiteľa.",
+   "verified": true,
+   "passage": "u6",
+   "number": 38
+  },
+  {
+   "kind": "abcd",
+   "topic": "Čítanie s porozumením",
+   "prompt": "When did Max run away?",
+   "options": [
+    "On Saturday morning.",
+    "During a storm.",
+    "At night.",
+    "Two days ago."
+   ],
+   "correct": "B",
+   "explanation": "V texte: „had run away during a storm“.",
+   "verified": true,
+   "passage": "u6",
+   "number": 39
+  },
+  {
+   "kind": "short",
+   "topic": "Čítanie s porozumením",
+   "prompt": "Napíš, čo dostala Emma ako poďakovanie (jedno slovo):",
+   "correct": "chocolates",
+   "explanation": "V texte: „a box of chocolates“.",
+   "accepted": [
+    "chocolate"
+   ],
+   "verified": true,
+   "passage": "u6",
+   "number": 40
+  }
+ ]
+}

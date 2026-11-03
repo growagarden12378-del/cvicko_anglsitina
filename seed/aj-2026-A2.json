@@ -1,0 +1,456 @@
+{
+ "test": {
+  "subject": "aj",
+  "year": 2026,
+  "variant": "A2",
+  "title": "Angličtina – A2 Mierne pokročilý",
+  "duration_min": 30
+ },
+ "passages": [
+  {
+   "key": "u5",
+   "title": "Ukážka 5 – Weekend plans",
+   "body": "This weekend my family is going to visit the zoo. We are going to leave at nine o’clock, because it takes two hours by car. My little brother wants to see the elephants, but I like the monkeys best. After lunch we will have an ice cream and then we will drive home."
+  }
+ ],
+ "questions": [
+  {
+   "number": 1,
+   "kind": "abcd",
+   "topic": "Prítomné časy",
+   "prompt": "My brother ___ football every Saturday.",
+   "options": [
+    "playing",
+    "plays",
+    "play",
+    "is playing"
+   ],
+   "correct": "B",
+   "explanation": "Každú sobotu = pravidelný zvyk, preto present simple. Pri he/she/it (brother = he) pridáme k slovesu -s: he plays. Preklad: Môj brat hrá každú sobotu futbal.",
+   "verified": true
+  },
+  {
+   "number": 2,
+   "kind": "abcd",
+   "topic": "Prítomné časy",
+   "prompt": "Be quiet! The baby ___.",
+   "options": [
+    "sleep",
+    "is sleeping",
+    "slept",
+    "sleeps"
+   ],
+   "correct": "B",
+   "explanation": "„Be quiet!“ a „práve teraz“ = dej prebieha v tejto chvíli, preto present continuous: am/is/are + sloveso s -ing (is sleeping). Preklad: Buď ticho! Dieťa spí.",
+   "verified": true
+  },
+  {
+   "number": 3,
+   "kind": "abcd",
+   "topic": "Prítomné časy",
+   "prompt": "___ you usually have breakfast at home?",
+   "options": [
+    "Are",
+    "Do",
+    "Does",
+    "Is"
+   ],
+   "correct": "B",
+   "explanation": "Otázku v present simple tvoríme pomocným slovesom do/does. Pri I, you, we, they použijeme do: Do you…? Preklad: Raňajkuješ zvyčajne doma?",
+   "verified": true
+  },
+  {
+   "number": 4,
+   "kind": "abcd",
+   "topic": "Minulé a budúce časy",
+   "prompt": "Last summer we ___ to Italy.",
+   "options": [
+    "go",
+    "went",
+    "goes",
+    "gone"
+   ],
+   "correct": "B",
+   "explanation": "„Last summer“ = minulosť. Sloveso go je nepravidelné: go – went – gone. Preklad: Minulé leto sme išli do Talianska.",
+   "verified": true
+  },
+  {
+   "number": 5,
+   "kind": "abcd",
+   "topic": "Predložky a členy",
+   "prompt": "I was born ___ 2010.",
+   "options": [
+    "in",
+    "on",
+    "at",
+    "by"
+   ],
+   "correct": "A",
+   "explanation": "Pri rokoch používame predložku in: in 2010, in 1999. Pre mesiace tiež in (in May), pre dni on (on Monday).",
+   "verified": true
+  },
+  {
+   "number": 6,
+   "kind": "abcd",
+   "topic": "Predložky a členy",
+   "prompt": "She is ___ honest girl.",
+   "options": [
+    "an",
+    "a",
+    "the",
+    "–"
+   ],
+   "correct": "A",
+   "explanation": "Člen a/an záleží na ZVUKU, nie na písmene. Honest začína zvukom „o“ (h sa nevyslovuje), preto an honest girl.",
+   "verified": true
+  },
+  {
+   "number": 7,
+   "kind": "short",
+   "topic": "Predložky a členy",
+   "prompt": "Doplň predložku: The film starts ___ 7 p.m.",
+   "correct": "at",
+   "explanation": "Pri presnom čase používame at: at 7 p.m., at noon, at night. Preklad: Film začína o siedmej večer.",
+   "accepted": [],
+   "verified": true
+  },
+  {
+   "kind": "abcd",
+   "topic": "Minulé a budúce časy",
+   "prompt": "I ___ TV last night.",
+   "options": [
+    "watched",
+    "watches",
+    "watch",
+    "watching"
+   ],
+   "correct": "A",
+   "explanation": "Last night = minulosť. Pravidelné sloveso dostane príponu -ed: watch – watched. Preklad: Včera večer som pozeral televíziu.",
+   "verified": true,
+   "number": 8
+  },
+  {
+   "kind": "abcd",
+   "topic": "Minulé a budúce časy",
+   "prompt": "We ___ to Spain next summer.",
+   "options": [
+    "goes",
+    "went",
+    "are going",
+    "going"
+   ],
+   "correct": "C",
+   "explanation": "Plán do budúcnosti vyjadríme are going (to). Preklad: Budúce leto ideme do Španielska. „Went“ by bolo minulosť, preto nesedí.",
+   "verified": true,
+   "number": 9
+  },
+  {
+   "kind": "short",
+   "topic": "Minulé a budúce časy",
+   "prompt": "Dopíš minulý čas: She ___ (see) a film yesterday.",
+   "correct": "saw",
+   "explanation": "See je nepravidelné sloveso: see – saw – seen. Yesterday = minulosť, preto saw. Preklad: Včera videla film.",
+   "accepted": [],
+   "verified": true,
+   "number": 10
+  },
+  {
+   "kind": "short",
+   "topic": "Predložky a členy",
+   "prompt": "Doplň predložku: She is good ___ English.",
+   "correct": "at",
+   "explanation": "Good at + niečo = byť dobrý v niečom. Podobne: bad at, interested in, afraid of.",
+   "accepted": [],
+   "verified": true,
+   "number": 11
+  },
+  {
+   "kind": "abcd",
+   "topic": "Minulé a budúce časy",
+   "prompt": "Last weekend I ___ my friends.",
+   "options": [
+    "meeted",
+    "meet",
+    "met",
+    "meets"
+   ],
+   "correct": "C",
+   "explanation": "Meet je nepravidelné sloveso: meet – met – met. Last weekend = minulosť, preto met. Preklad: Minulý víkend som sa stretol s priateľmi.",
+   "verified": true,
+   "number": 12
+  },
+  {
+   "kind": "abcd",
+   "topic": "Prítomné časy",
+   "prompt": "Mary ___ not like spiders.",
+   "options": [
+    "is",
+    "does",
+    "do",
+    "are"
+   ],
+   "correct": "B",
+   "explanation": "Záporná veta v present simple: pri she použijeme does not (doesn’t) + základný tvar: Mary does not like spiders. Preklad: Mary nemá rada pavúky.",
+   "verified": true,
+   "number": 13
+  },
+  {
+   "kind": "abcd",
+   "topic": "Slovná zásoba",
+   "prompt": "Which word is the opposite of “cold”?",
+   "options": [
+    "wet",
+    "hot",
+    "cool",
+    "dry"
+   ],
+   "correct": "B",
+   "explanation": "Cold = studený, hot = horúci. Medzi nimi sú cool = chladný a warm = teplý.",
+   "verified": true,
+   "number": 14
+  },
+  {
+   "kind": "abcd",
+   "topic": "Predložky a členy",
+   "prompt": "There are some books ___ the shelf.",
+   "options": [
+    "in",
+    "by",
+    "at",
+    "on"
+   ],
+   "correct": "D",
+   "explanation": "Pri veciach na polici, stole alebo stene používame on: on the shelf, on the table. Preklad: Na poličke je niekoľko kníh.",
+   "verified": true,
+   "number": 15
+  },
+  {
+   "kind": "abcd",
+   "topic": "Modálne slovesá a podmienky",
+   "prompt": "___ I borrow your pen, please?",
+   "options": [
+    "Am",
+    "May",
+    "Are",
+    "Do"
+   ],
+   "correct": "B",
+   "explanation": "May I…? je zdvorilá žiadosť o dovolenie. Rovnako: Can I…? Could I…? Preklad: Môžem si požičať tvoje pero?",
+   "verified": true,
+   "number": 16
+  },
+  {
+   "kind": "abcd",
+   "topic": "Prítomné časy",
+   "prompt": "My dad usually ___ the car on Sundays.",
+   "options": [
+    "is wash",
+    "wash",
+    "washing",
+    "washes"
+   ],
+   "correct": "D",
+   "explanation": "Usually = zvyk, preto present simple. Pri he/she/it pridáme -es (po -sh, -ch, -s): washes. Preklad: Môj otec zvyčajne umýva auto v nedeľu.",
+   "verified": true,
+   "number": 17
+  },
+  {
+   "kind": "short",
+   "topic": "Prítomné časy",
+   "prompt": "Dopíš správny tvar: Right now she ___ (read) a magazine.",
+   "correct": "is reading",
+   "explanation": "Right now = práve teraz, preto present continuous: is + sloveso s -ing. Preklad: Práve teraz číta časopis.",
+   "accepted": [],
+   "verified": true,
+   "number": 18
+  },
+  {
+   "kind": "abcd",
+   "topic": "Minulé a budúce časy",
+   "prompt": "We ___ football yesterday because it rained.",
+   "options": [
+    "not played",
+    "weren’t play",
+    "don’t play",
+    "didn’t play"
+   ],
+   "correct": "D",
+   "explanation": "Zápor v minulosti: did not (didn’t) + základný tvar slovesa. Preklad: Včera sme nehrali futbal, lebo pršalo.",
+   "verified": true,
+   "number": 19
+  },
+  {
+   "kind": "abcd",
+   "topic": "Minulé a budúce časy",
+   "prompt": "What ___ you do last night?",
+   "options": [
+    "were",
+    "does",
+    "did",
+    "do"
+   ],
+   "correct": "C",
+   "explanation": "Otázka v minulosti: did + podmet + základný tvar slovesa. Preklad: Čo si robil včera večer?",
+   "verified": true,
+   "number": 20
+  },
+  {
+   "kind": "short",
+   "topic": "Minulé a budúce časy",
+   "prompt": "Dopíš minulý čas: I ___ (buy) a new T-shirt.",
+   "correct": "bought",
+   "explanation": "Buy – bought – bought. Preklad: Kúpil som si nové tričko.",
+   "accepted": [],
+   "verified": true,
+   "number": 21
+  },
+  {
+   "kind": "abcd",
+   "topic": "Slovná zásoba",
+   "prompt": "Which word is a kind of weather?",
+   "options": [
+    "snow",
+    "soup",
+    "sock",
+    "sofa"
+   ],
+   "correct": "A",
+   "explanation": "Snow = sneh. Počasie: rain = dážď, wind = vietor, sun = slnko, cloud = oblak.",
+   "verified": true,
+   "number": 22
+  },
+  {
+   "kind": "abcd",
+   "topic": "Slovná zásoba",
+   "prompt": "Čo znamená „borrow“?",
+   "options": [
+    "kúpiť",
+    "stratiť",
+    "požičať si",
+    "požičať niekomu"
+   ],
+   "correct": "C",
+   "explanation": "Borrow = požičať si (od niekoho). Požičať niekomu = lend. Preklad: Môžem si požičať tvoje pero? = Can I borrow your pen?",
+   "verified": true,
+   "number": 23
+  },
+  {
+   "kind": "short",
+   "topic": "Slovná zásoba",
+   "prompt": "Dopíš opak slova „open“ (v tvare prídavného mena):",
+   "correct": "closed",
+   "explanation": "Open = otvorený, closed = zatvorený. Sloveso: close/shut.",
+   "accepted": [
+    "close",
+    "shut"
+   ],
+   "verified": true,
+   "number": 24
+  },
+  {
+   "kind": "abcd",
+   "topic": "Predložky a členy",
+   "prompt": "We are waiting ___ the bus.",
+   "options": [
+    "to",
+    "for",
+    "at",
+    "on"
+   ],
+   "correct": "B",
+   "explanation": "Wait for = čakať na. Preklad: Čakáme na autobus.",
+   "verified": true,
+   "number": 25
+  },
+  {
+   "kind": "abcd",
+   "topic": "Predložky a členy",
+   "prompt": "I have a ticket ___ the concert.",
+   "options": [
+    "of",
+    "for",
+    "about",
+    "to"
+   ],
+   "correct": "B",
+   "explanation": "Ticket for = lístok na koncert/film. Preklad: Mám lístok na koncert.",
+   "verified": true,
+   "number": 26
+  },
+  {
+   "kind": "abcd",
+   "topic": "Modálne slovesá a podmienky",
+   "prompt": "You ___ eat so many sweets. It is bad for you.",
+   "options": [
+    "must",
+    "should",
+    "shouldn’t",
+    "can"
+   ],
+   "correct": "C",
+   "explanation": "Shouldn’t = nemal by si (rada). Preklad: Nemal by si jesť toľko sladkostí.",
+   "verified": true,
+   "number": 27
+  },
+  {
+   "kind": "abcd",
+   "topic": "Modálne slovesá a podmienky",
+   "prompt": "It is cold. You ___ wear a jacket.",
+   "options": [
+    "mustn’t",
+    "can’t",
+    "should",
+    "shouldn’t"
+   ],
+   "correct": "C",
+   "explanation": "Should = mal by si, ide o radu. Preklad: Je zima. Mal by si si obliecť bundu.",
+   "verified": true,
+   "number": 28
+  },
+  {
+   "kind": "abcd",
+   "topic": "Čítanie s porozumením",
+   "prompt": "How long does the drive to the zoo take?",
+   "options": [
+    "Three hours",
+    "Two hours",
+    "One hour",
+    "Thirty minutes"
+   ],
+   "correct": "B",
+   "explanation": "V texte: „it takes two hours by car“. Hľadaj v texte údaj o čase.",
+   "verified": true,
+   "passage": "u5",
+   "number": 29
+  },
+  {
+   "kind": "abcd",
+   "topic": "Čítanie s porozumením",
+   "prompt": "Which animals does the writer like best?",
+   "options": [
+    "Lions",
+    "Monkeys",
+    "Birds",
+    "Elephants"
+   ],
+   "correct": "B",
+   "explanation": "V texte: „I like the monkeys best“. Slon (elephant) sa páči bratovi.",
+   "verified": true,
+   "passage": "u5",
+   "number": 30
+  },
+  {
+   "kind": "short",
+   "topic": "Čítanie s porozumením",
+   "prompt": "Napíš, čo si dajú po obede (dve slová):",
+   "correct": "ice cream",
+   "explanation": "V texte: „we will have an ice cream“. Preklad: Po obede si dáme zmrzlinu.",
+   "accepted": [
+    "an ice cream"
+   ],
+   "verified": true,
+   "passage": "u5",
+   "number": 31
+  }
+ ]
+}

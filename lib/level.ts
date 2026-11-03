@@ -1,40 +1,69 @@
-export type Placement = { q: string; o: string[]; c: number };
-export const LEVELS = [
-  { code: 'A1', name: 'Začiatočník', variant: 'A', text: 'Zvládaš základné slová a jednoduché vety. Začneš testom Základy.' },
-  { code: 'A2', name: 'Mierne pokročilý', variant: 'A', text: 'Poznáš základnú gramatiku a bežné slovíčka. Začneš testom Základy a postupne sa posunieš vyššie.' },
-  { code: 'B1', name: 'Stredne pokročilý', variant: 'B', text: 'Vieš sa dorozumieť aj v zložitejších vetách. Odporúčame test Stredná úroveň.' },
-  { code: 'B2', name: 'Pokročilý', variant: 'C', text: 'Zvládaš aj náročnejšiu gramatiku a texty. Odporúčame test Pokročilá úroveň.' },
-] as const;
+import { CEFR } from './cefr';
+import { load, save } from './progress';
 
-// 12 úloh, vždy 3 na úroveň (A1, A2, B1, B2)
+export type Placement = { q: string; o: string[]; c: number };
+
+// 25 úloh, 5 na úroveň (A1, A2, B1, B2, C1). Test je adaptívny: končí, keď žiak v bloku neuspeje.
+export const BLOCK = 5;
+export const PASS = 3;
 export const PLACEMENT: Placement[] = [
-  { q: 'I ___ a student.', o: ['am', 'is', 'are', 'be'], c: 0 },
-  { q: 'She has two ___.', o: ['child', 'childs', 'children', 'childes'], c: 2 },
-  { q: '___ is your name?', o: ['Who', 'What', 'Where', 'When'], c: 1 },
-  { q: 'Yesterday we ___ pizza for dinner.', o: ['eat', 'ate', 'eaten', 'eating'], c: 1 },
-  { q: 'This bag is ___ than that one.', o: ['heavy', 'heavier', 'heaviest', 'more heavy'], c: 1 },
-  { q: 'I have lived here ___ 2015.', o: ['for', 'since', 'from', 'during'], c: 1 },
-  { q: 'If I had more time, I ___ learn Spanish.', o: ['will', 'would', 'can', 'am'], c: 1 },
-  { q: 'The book ___ by millions of people.', o: ['is read', 'reads', 'read', 'is reading'], c: 0 },
-  { q: 'She asked me where I ___.', o: ['live', 'lived', 'lives', 'am living'], c: 1 },
-  { q: 'By the time we arrived, the film ___ already started.', o: ['has', 'had', 'was', 'have'], c: 1 },
-  { q: 'I wish I ___ taller.', o: ['am', 'will be', 'were', 'would be'], c: 2 },
-  { q: 'He suggested ___ a taxi.', o: ['to take', 'taking', 'take', 'took'], c: 1 },
+  // A1
+  { q: 'She ___ from Slovakia.', o: ['am', 'is', 'are', 'be'], c: 1 },
+  { q: 'I ___ two brothers.', o: ['have', 'has', 'am', 'is'], c: 0 },
+  { q: 'There ___ a book on the table.', o: ['is', 'are', 'am', 'be'], c: 0 },
+  { q: '___ you like pizza?', o: ['Do', 'Does', 'Is', 'Are'], c: 0 },
+  { q: 'Čo znamená „breakfast“?', o: ['raňajky', 'obed', 'večera', 'desiata'], c: 0 },
+  // A2
+  { q: 'Yesterday I ___ my grandma.', o: ['visit', 'visited', 'visiting', 'visits'], c: 1 },
+  { q: 'She is ___ than her sister.', o: ['tall', 'taller', 'tallest', 'more tall'], c: 1 },
+  { q: 'We ___ TV when the phone rang.', o: ['watched', 'were watching', 'watch', 'are watching'], c: 1 },
+  { q: 'I am going to ___ a new phone next month.', o: ['buy', 'buys', 'bought', 'buying'], c: 0 },
+  { q: 'How ___ water do you drink a day?', o: ['many', 'much', 'lot', 'few'], c: 1 },
+  // B1
+  { q: 'I have been learning English ___ three years.', o: ['since', 'for', 'from', 'during'], c: 1 },
+  { q: 'This is the house ___ I grew up.', o: ['who', 'which', 'where', 'what'], c: 2 },
+  { q: 'The window ___ by the boy yesterday.', o: ['broke', 'was broken', 'is broken', 'has broke'], c: 1 },
+  { q: 'He said that he ___ tired.', o: ['is', 'was', 'be', 'were'], c: 1 },
+  { q: 'I am not used to ___ up early.', o: ['get', 'getting', 'got', 'gets'], c: 1 },
+  // B2
+  { q: 'By next year, I ___ my studies.', o: ['will finish', 'will have finished', 'finish', 'am finishing'], c: 1 },
+  { q: 'I wish I ___ more time yesterday.', o: ['have', 'had', 'had had', 'would have'], c: 2 },
+  { q: 'Despite ___ tired, she went to the gym.', o: ['be', 'being', 'was', 'she was'], c: 1 },
+  { q: 'He is the man ___ car was stolen.', o: ['who', 'whom', 'whose', 'which'], c: 2 },
+  { q: 'If I had studied harder, I ___ the exam.', o: ['would pass', 'would have passed', 'will pass', 'passed'], c: 1 },
+  // C1
+  { q: 'Hardly ___ the house when it started to rain.', o: ['had we left', 'we had left', 'did we leave', 'we left'], c: 0 },
+  { q: 'She ___ have left already; her coat is gone.', o: ['must', 'should', 'would', 'can'], c: 0 },
+  { q: 'Čo znamená „reluctant“?', o: ['neochotný', 'ochotný', 'unavený', 'nahnevaný'], c: 0 },
+  { q: 'No sooner had I arrived ___ the phone rang.', o: ['than', 'when', 'that', 'then'], c: 0 },
+  { q: 'The report, ___ was published last week, caused a debate.', o: ['who', 'which', 'what', 'whose'], c: 1 },
 ];
 
-export const levelFromScore = (s: number) => (s <= 3 ? 1 : s <= 6 ? 2 : s <= 9 ? 3 : 4);
+// Počet po sebe splnených blokov = úroveň (aspoň A1)
+export function levelFromBlocks(passed: number) {
+  return Math.min(Math.max(passed, 1), CEFR.length);
+}
 
-const KEY = 'cvicko-level-v1';
-export function readLevel(): { level: number; score: number } | null {
+// Žiak začína na XP, ktoré zodpovedajú jeho úrovni (nikdy sa mu XP neznížia)
+export function applyPlacement(level: number) {
+  try {
+    const p = load();
+    const floor = CEFR[level - 1].from;
+    if (p.xp < floor) save({ ...p, xp: floor });
+  } catch {}
+}
+
+const KEY = 'cvicko-level-v2';
+export function readLevel(): { level: number } | null {
   try {
     const v = JSON.parse(localStorage.getItem(KEY) || 'null');
-    return v && v.level >= 1 && v.level <= 4 ? v : null;
+    return v && v.level >= 1 && v.level <= CEFR.length ? v : null;
   } catch {
     return null;
   }
 }
-export function saveLevel(level: number, score: number) {
-  try { localStorage.setItem(KEY, JSON.stringify({ level, score, at: Date.now() })); } catch {}
+export function saveLevel(level: number) {
+  try { localStorage.setItem(KEY, JSON.stringify({ level, at: Date.now() })); } catch {}
 }
 export function clearLevel() {
   try { localStorage.removeItem(KEY); } catch {}

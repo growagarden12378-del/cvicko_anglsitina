@@ -9,6 +9,7 @@ const sql = neon(process.env.DATABASE_URL);
 
 const files = readdirSync(dir).filter((f) => f.endsWith('.json'));
 
+const seen = [];
 for (const file of files) {
   const data = JSON.parse(readFileSync(join(dir, file), 'utf8'));
   const t = data.test;
@@ -22,6 +23,7 @@ for (const file of files) {
     [t.subject, t.year, t.variant ?? 'A', t.title ?? null, t.duration_min ?? null]
   );
 
+  seen.push([t.subject, t.year, t.variant ?? 'A'].join('|'));
   // ukážky/zadania sa pri každom seede vytvoria nanovo
   await sql.query('delete from passages where test_id = $1', [test.id]);
   const passageIds = {};
@@ -66,3 +68,6 @@ for (const file of files) {
   ]);
   console.log(`${file}: ${data.questions.length} úloh`);
 }
+
+// testy, ktoré už nemajú súbor, zmaž (aj s úlohami)
+await sql.query("delete from tests where subject = any($1::text[]) and (subject || '|' || year || '|' || variant) <> all($2::text[])", [[...new Set(seen.map((x) => x.split('|')[0]))], seen]);

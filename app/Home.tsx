@@ -2,7 +2,8 @@
 
 import { type ComponentProps, useEffect, useMemo, useRef, useState } from 'react';
 import LevelGate from './Placement';
-import { LEVELS, clearLevel, readLevel } from '@/lib/level';
+import { CEFR, poolFor } from '@/lib/cefr';
+import { clearLevel } from '@/lib/level';
 import Journal from './Journal';
 import Sites from './Sites';
 import Account, { type User } from './Account';
@@ -152,8 +153,6 @@ function HomeInner({
   const [subject, setSubject] = useState(initialSubject);
   const [mode, setMode] = useState<Mode>(initialMode);
   const [picked, setPicked] = useState<string[]>([]);
-  const [myLevel, setMyLevel] = useState<number | null>(null);
-  useEffect(() => { setMyLevel(readLevel()?.level ?? null); }, []);
   const [testId, setTestId] = useState<number | null>(null);
   const [limit, setLimit] = useState(10);
   const [error, setError] = useState('');
@@ -391,8 +390,7 @@ function HomeInner({
   const current = meta?.[subject];
   useEffect(() => {
     setPicked([]);
-    const lv = readLevel();
-    const rec = lv ? LEVELS[lv.level - 1].variant : null;
+    const rec = CEFR[levelInfo(progRef.current.xp).level - 1].code;
     setTestId((current?.tests.find((t) => t.variant === rec) ?? current?.tests[0])?.id ?? null);
   }, [subject, meta]); // eslint-disable-line react-hooks/exhaustive-deps
 
@@ -491,6 +489,7 @@ function HomeInner({
     setError('');
     setLoading(true);
     try {
+      if (!params.has('test') && !params.has('ids') && !params.has('levels')) params.set('levels', poolFor(levelInfo(progRef.current.xp).level).join(','));
       const r = await fetch('/api/questions?' + params.toString());
       if (!r.ok) throw new Error('questions');
       const d = await r.json();
@@ -632,6 +631,7 @@ function HomeInner({
 
   // ---------- spoločné prvky ----------
   const lvl = levelInfo(prog.xp);
+  const myLevel = lvl.level;
   const days = streak(prog.days);
   const todayCount = prog.days[dayKey()] ?? 0;
 
@@ -724,7 +724,7 @@ function HomeInner({
             <p className="report__xp">
               <strong>+{sessionXp} XP</strong>
               {bestCombo >= 3 && session?.practice ? ` · najdlhšia séria ${bestCombo} správnych` : ''}
-              {levelNow > (session?.levelStart ?? levelNow) ? ` · nová úroveň ${levelNow}` : ''}
+              {levelNow > (session?.levelStart ?? levelNow) ? ` · nová úroveň ${CEFR[levelNow - 1].code}` : ''}
             </p>
           </div>
         </section>
@@ -923,7 +923,7 @@ function HomeInner({
                 {!res.verified && (
                   <p className="verdict__note">Odpoveď k tejto úlohe zatiaľ nie je overená podľa oficiálneho kľúča.</p>
                 )}
-                {levelUp && <p className="verdict__level">Nová úroveň: {levelUp}</p>}
+                {levelUp && <p className="verdict__level">Nová úroveň: {CEFR[levelUp - 1].code}</p>}
               </div>
               {flash && (
                 <span className="xp-pop" key={flash.key}>+{flash.xp} XP{flash.candy > 0 ? ` · +${flash.candy} 🍬` : ''}</span>
@@ -1024,9 +1024,9 @@ function HomeInner({
         </div>
         <div className="mini" aria-label="Tvoj postup">
           <div className="mini__level">
-            <span className="level-badge level-badge--sm" aria-hidden="true">{lvl.level}</span>
+            <span className="level-badge level-badge--sm" aria-hidden="true">{lvl.code}</span>
             <div className="mini__levelbody">
-              <b>Úroveň {lvl.level}</b>
+              <b>Úroveň {lvl.code}</b>
               <span className="meter meter--thin" role="progressbar" aria-valuemin={0} aria-valuemax={lvl.span} aria-valuenow={lvl.into} aria-label="XP do ďalšej úrovne">
                 <i style={{ width: `${(100 * lvl.into) / lvl.span}%` }} />
               </span>
@@ -1133,12 +1133,12 @@ function HomeInner({
             <p className="mode__hint">Ako na skúške: beží časovač a výsledky uvidíš až po odovzdaní.</p>
             {myLevel && (
               <p className="mode__hint">
-                Tvoja úroveň: <b>{LEVELS[myLevel - 1].code} – {LEVELS[myLevel - 1].name}</b>. Odporúčaný test je označený ⭐.
+                Tvoja úroveň: <b>{CEFR[myLevel - 1].code} – {CEFR[myLevel - 1].name}</b>. Odporúčaný test je označený ⭐.
                 <button className="pl__retake" onClick={() => { clearLevel(); window.location.reload(); }}>Zopakovať úrovňový test</button>
               </p>
             )}
             <div className="tlist">
-              {[...(current?.tests ?? [])].sort((a, b) => Number(b.variant === (myLevel ? LEVELS[myLevel - 1].variant : '')) - Number(a.variant === (myLevel ? LEVELS[myLevel - 1].variant : ''))).map((t) => (
+              {[...(current?.tests ?? [])].sort((a, b) => Number(b.variant === (myLevel ? CEFR[myLevel - 1].code : '')) - Number(a.variant === (myLevel ? CEFR[myLevel - 1].code : ''))).map((t) => (
                 <button
                   key={t.id}
                   className={'trow trow--test' + (testId === t.id ? ' trow--on' : '')}
@@ -1146,7 +1146,7 @@ function HomeInner({
                   onClick={() => setTestId(t.id)}
                 >
                   <span className="trow__box trow__box--radio" aria-hidden="true" />
-                  <span className="trow__name">{myLevel && t.variant === LEVELS[myLevel - 1].variant ? '⭐ ' : ''}{t.title || `${t.year} – variant ${t.variant}`}</span>
+                  <span className="trow__name">{myLevel && t.variant === CEFR[myLevel - 1].code ? '⭐ ' : ''}{t.title || `${t.year} – variant ${t.variant}`}</span>
                   <span className="trow__n">
                     {t.n ? `${t.n} ${plural(t.n, 'úloha', 'úlohy', 'úloh')}` : ''}
                     {t.n && t.duration_min ? ' · ' : ''}
