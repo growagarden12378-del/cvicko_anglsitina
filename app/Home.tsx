@@ -102,7 +102,6 @@ function PenMark({ ok }: { ok: boolean }) {
   );
 }
 
-const SOURCE_NOTE = 'Ide o vlastné cvičné úlohy, nie o oficiálny test.';
 
 // Obrázok, ktorý sa po klepnutí otvorí na celú obrazovku (na mobile sa dá posúvať a priblížiť).
 function ZoomImg({ src, alt, className }: { src: string; alt: string; className?: string }) {
@@ -756,7 +755,6 @@ function HomeInner({
           </button>
         </div>
 
-        <p className="source source--light">{[...new Set(qs.map((x) => x.source).filter(Boolean))].join('; ') || 'Cvičný test'}. {SOURCE_NOTE}</p>
 
         <section className="panel">
           <div className="panel__head">
@@ -841,7 +839,6 @@ function HomeInner({
 
         <section className="sheet" key={q.id}>
           <p className="sheet__meta">{q.topic}</p>
-          <p className="source">Zdroj: {q.source ?? 'cvičné úlohy'}. {SOURCE_NOTE}</p>
 
           {q.passage && (
             <div className="passage">
@@ -1158,7 +1155,6 @@ function HomeInner({
                 <button className="pl__retake" onClick={() => { clearLevel(); window.location.reload(); }}>Zopakovať úrovňový test</button>
               </p>
             )}
-            <p className="source source--box">{SOURCE_NOTE}</p>
             <div className="tlist">
               {[...(current?.tests ?? [])].sort((a, b) => Number(b.variant === (myLevel ? LEVELS[myLevel - 1].variant : '')) - Number(a.variant === (myLevel ? LEVELS[myLevel - 1].variant : ''))).map((t) => (
                 <button

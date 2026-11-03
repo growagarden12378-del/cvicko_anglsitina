@@ -4,9 +4,15 @@
   "year": 2026,
   "variant": "A",
   "title": "Angličtina – Základy (A1–A2)",
-  "duration_min": 15
+  "duration_min": 25
  },
- "passages": [],
+ "passages": [
+  {
+   "key": "u3",
+   "title": "Ukážka 3 – My day",
+   "body": "My name is Anna and I am twelve. I get up at seven o’clock and have breakfast with my brother. We walk to school together. After school I do my homework and play tennis. On Sundays we visit our grandmother, who lives in a small village."
+  }
+ ],
  "questions": [
   {
    "number": 1,
@@ -142,6 +148,249 @@
    "explanation": "Pred presným časom používame at.",
    "accepted": [],
    "verified": true
+  },
+  {
+   "kind": "abcd",
+   "topic": "Prítomné časy",
+   "prompt": "My parents ___ in Košice.",
+   "options": [
+    "live",
+    "lives",
+    "is living",
+    "living"
+   ],
+   "correct": "A",
+   "explanation": "Podmet v množnom čísle (parents) berie sloveso bez -s.",
+   "verified": true,
+   "number": 11
+  },
+  {
+   "kind": "abcd",
+   "topic": "Prítomné časy",
+   "prompt": "Tom ___ a dog.",
+   "options": [
+    "have",
+    "has",
+    "haves",
+    "is have"
+   ],
+   "correct": "B",
+   "explanation": "Pri he/she/it používame has.",
+   "verified": true,
+   "number": 12
+  },
+  {
+   "kind": "short",
+   "topic": "Prítomné časy",
+   "prompt": "Dopíš správny tvar: We ___ (go) to school by bus.",
+   "correct": "go",
+   "explanation": "Pri we sloveso nemení tvar.",
+   "accepted": [],
+   "verified": true,
+   "number": 13
+  },
+  {
+   "kind": "abcd",
+   "topic": "Minulé a budúce časy",
+   "prompt": "I ___ TV last night.",
+   "options": [
+    "watched",
+    "watch",
+    "watching",
+    "watches"
+   ],
+   "correct": "A",
+   "explanation": "Pravidelné sloveso v minulosti: príponou -ed.",
+   "verified": true,
+   "number": 14
+  },
+  {
+   "kind": "abcd",
+   "topic": "Minulé a budúce časy",
+   "prompt": "We ___ to Spain next summer.",
+   "options": [
+    "going",
+    "are going",
+    "went",
+    "goes"
+   ],
+   "correct": "B",
+   "explanation": "Plán do budúcnosti: are going to (alebo are going).",
+   "verified": true,
+   "number": 15
+  },
+  {
+   "kind": "short",
+   "topic": "Minulé a budúce časy",
+   "prompt": "Dopíš minulý čas: She ___ (see) a film yesterday.",
+   "correct": "saw",
+   "explanation": "See – saw – seen.",
+   "accepted": [],
+   "verified": true,
+   "number": 16
+  },
+  {
+   "kind": "abcd",
+   "topic": "Slovná zásoba",
+   "prompt": "Čo znamená „window“?",
+   "options": [
+    "okno",
+    "dvere",
+    "stena",
+    "strecha"
+   ],
+   "correct": "A",
+   "explanation": "Window = okno, door = dvere.",
+   "verified": true,
+   "number": 17
+  },
+  {
+   "kind": "abcd",
+   "topic": "Slovná zásoba",
+   "prompt": "Which word means „veľký“?",
+   "options": [
+    "small",
+    "big",
+    "short",
+    "thin"
+   ],
+   "correct": "B",
+   "explanation": "Big = veľký, small = malý.",
+   "verified": true,
+   "number": 18
+  },
+  {
+   "kind": "short",
+   "topic": "Slovná zásoba",
+   "prompt": "Dopíš anglický preklad slova „voda“:",
+   "correct": "water",
+   "explanation": "Water = voda.",
+   "accepted": [],
+   "verified": true,
+   "number": 19
+  },
+  {
+   "kind": "abcd",
+   "topic": "Predložky a členy",
+   "prompt": "The cat is ___ the table.",
+   "options": [
+    "under",
+    "for",
+    "with",
+    "about"
+   ],
+   "correct": "A",
+   "explanation": "Under = pod.",
+   "verified": true,
+   "number": 20
+  },
+  {
+   "kind": "abcd",
+   "topic": "Predložky a členy",
+   "prompt": "I go to school ___ bus.",
+   "options": [
+    "by",
+    "in",
+    "at",
+    "with"
+   ],
+   "correct": "A",
+   "explanation": "Dopravný prostriedok: by bus, by car, by train.",
+   "verified": true,
+   "number": 21
+  },
+  {
+   "kind": "short",
+   "topic": "Predložky a členy",
+   "prompt": "Doplň predložku: She is good ___ English.",
+   "correct": "at",
+   "explanation": "Good at = dobrý v niečom.",
+   "accepted": [],
+   "verified": true,
+   "number": 22
+  },
+  {
+   "kind": "abcd",
+   "topic": "Modálne slovesá a podmienky",
+   "prompt": "I ___ swim very well.",
+   "options": [
+    "can",
+    "must",
+    "am",
+    "do"
+   ],
+   "correct": "A",
+   "explanation": "Can vyjadruje schopnosť.",
+   "verified": true,
+   "number": 23
+  },
+  {
+   "kind": "abcd",
+   "topic": "Modálne slovesá a podmienky",
+   "prompt": "___ you help me, please?",
+   "options": [
+    "Can",
+    "Do",
+    "Are",
+    "Is"
+   ],
+   "correct": "A",
+   "explanation": "Žiadosť o pomoc: Can you…?",
+   "verified": true,
+   "number": 24
+  },
+  {
+   "kind": "short",
+   "topic": "Modálne slovesá a podmienky",
+   "prompt": "Dopíš sloveso: I ___ speak English. (Viem po anglicky.)",
+   "correct": "can",
+   "explanation": "Can = vedieť, môcť.",
+   "accepted": [],
+   "verified": true,
+   "number": 25
+  },
+  {
+   "kind": "abcd",
+   "topic": "Čítanie s porozumením",
+   "prompt": "What time does Anna get up?",
+   "options": [
+    "At six.",
+    "At seven.",
+    "At eight.",
+    "At nine."
+   ],
+   "correct": "B",
+   "explanation": "Anna vstáva o siedmej.",
+   "verified": true,
+   "passage": "u3",
+   "number": 26
+  },
+  {
+   "kind": "abcd",
+   "topic": "Čítanie s porozumením",
+   "prompt": "Who does Anna have breakfast with?",
+   "options": [
+    "Her brother",
+    "Her mother",
+    "Her friend",
+    "Her grandmother"
+   ],
+   "correct": "A",
+   "explanation": "Raňajkuje s bratom.",
+   "verified": true,
+   "passage": "u3",
+   "number": 27
+  },
+  {
+   "kind": "short",
+   "topic": "Čítanie s porozumením",
+   "prompt": "Napíš, aký šport Anna hrá (jedno slovo):",
+   "correct": "tennis",
+   "explanation": "Po škole hrá tenis.",
+   "accepted": [],
+   "verified": true,
+   "passage": "u3",
+   "number": 28
   }
  ]
 }

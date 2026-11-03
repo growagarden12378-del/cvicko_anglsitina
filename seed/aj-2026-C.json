@@ -4,7 +4,7 @@
   "year": 2026,
   "variant": "C",
   "title": "Angličtina – Pokročilá úroveň (B1+–B2)",
-  "duration_min": 20
+  "duration_min": 25
  },
  "passages": [
   {
@@ -163,6 +163,188 @@
    "correct": "B",
    "explanation": "Po slovese deny nasleduje tvar -ing.",
    "verified": true
+  },
+  {
+   "kind": "abcd",
+   "topic": "Prítomné časy",
+   "prompt": "I ___ this song. It is great!",
+   "options": [
+    "am loving",
+    "love",
+    "loves",
+    "am love"
+   ],
+   "correct": "B",
+   "explanation": "Slovesá citov (love, like, hate) sa zvyčajne nepoužívajú v priebehovom čase.",
+   "verified": true,
+   "number": 11
+  },
+  {
+   "kind": "abcd",
+   "topic": "Prítomné časy",
+   "prompt": "Which sentence is correct?",
+   "options": [
+    "She don’t like fish.",
+    "She doesn’t likes fish.",
+    "She doesn’t like fish.",
+    "She not like fish."
+   ],
+   "correct": "C",
+   "explanation": "Po does not nasleduje základný tvar slovesa bez -s.",
+   "verified": true,
+   "number": 12
+  },
+  {
+   "kind": "abcd",
+   "topic": "Minulé a budúce časy",
+   "prompt": "When I called him, he ___ dinner.",
+   "options": [
+    "was having",
+    "had",
+    "has",
+    "is having"
+   ],
+   "correct": "A",
+   "explanation": "Dej, ktorý prebiehal v danom okamihu v minulosti: past continuous.",
+   "verified": true,
+   "number": 13
+  },
+  {
+   "kind": "abcd",
+   "topic": "Minulé a budúce časy",
+   "prompt": "I ___ him since Monday.",
+   "options": [
+    "didn’t see",
+    "haven’t seen",
+    "don’t see",
+    "wasn’t seeing"
+   ],
+   "correct": "B",
+   "explanation": "Since + obdobie do dnes: present perfect (haven’t seen).",
+   "verified": true,
+   "number": 14
+  },
+  {
+   "kind": "abcd",
+   "topic": "Slovná zásoba",
+   "prompt": "Čo znamená „enough“?",
+   "options": [
+    "dosť",
+    "ťažký",
+    "čoskoro",
+    "niekedy"
+   ],
+   "correct": "A",
+   "explanation": "Enough = dosť, dostatočne.",
+   "verified": true,
+   "number": 15
+  },
+  {
+   "kind": "abcd",
+   "topic": "Slovná zásoba",
+   "prompt": "She is very ___. She never tells lies.",
+   "options": [
+    "honest",
+    "lazy",
+    "shy",
+    "rude"
+   ],
+   "correct": "A",
+   "explanation": "Honest = úprimný, čestný.",
+   "verified": true,
+   "number": 16
+  },
+  {
+   "kind": "abcd",
+   "topic": "Predložky a členy",
+   "prompt": "She lives ___ 25 Green Street.",
+   "options": [
+    "at",
+    "in",
+    "on",
+    "to"
+   ],
+   "correct": "A",
+   "explanation": "Pri presnej adrese s číslom: at.",
+   "verified": true,
+   "number": 17
+  },
+  {
+   "kind": "abcd",
+   "topic": "Predložky a členy",
+   "prompt": "We went ___ holiday last year.",
+   "options": [
+    "on",
+    "in",
+    "at",
+    "for"
+   ],
+   "correct": "A",
+   "explanation": "On holiday = na dovolenke.",
+   "verified": true,
+   "number": 18
+  },
+  {
+   "kind": "abcd",
+   "topic": "Modálne slovesá a podmienky",
+   "prompt": "If she ___ harder, she would pass the exam.",
+   "options": [
+    "studies",
+    "studied",
+    "will study",
+    "study"
+   ],
+   "correct": "B",
+   "explanation": "Nereálna podmienka: if + minulý čas, would.",
+   "verified": true,
+   "number": 19
+  },
+  {
+   "kind": "abcd",
+   "topic": "Modálne slovesá a podmienky",
+   "prompt": "I ___ to work yesterday because I was ill.",
+   "options": [
+    "couldn’t go",
+    "can’t go",
+    "mustn’t go",
+    "won’t go"
+   ],
+   "correct": "A",
+   "explanation": "Could = minulá forma can.",
+   "verified": true,
+   "number": 20
+  },
+  {
+   "kind": "abcd",
+   "topic": "Čítanie s porozumením",
+   "prompt": "What do sea animals often mistake plastic for?",
+   "options": [
+    "Food",
+    "Toys",
+    "Ships",
+    "Stones"
+   ],
+   "correct": "A",
+   "explanation": "Zvieratá si plast často pomýlia s potravou.",
+   "verified": true,
+   "passage": "u2",
+   "number": 21
+  },
+  {
+   "kind": "abcd",
+   "topic": "Čítanie s porozumením",
+   "prompt": "What do volunteers do at weekends?",
+   "options": [
+    "Ban plastic bags.",
+    "Clean beaches.",
+    "Build ships.",
+    "Feed animals."
+   ],
+   "correct": "B",
+   "explanation": "Dobrovoľníci cez víkendy čistia pláže.",
+   "verified": true,
+   "passage": "u2",
+   "number": 22
   }
  ]
 }
