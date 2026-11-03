@@ -1042,24 +1042,6 @@ function HomeInner({
         </div>
       </header>
 
-      <nav className="subjects" aria-label="Predmet">
-        {Object.entries(meta).map(([key, s]) => {
-          const ok = hasContent(s);
-          const n = totalQ(s);
-          return (
-            <button
-              key={key}
-              className={'subject' + (subject === key ? ' subject--on' : '')}
-              aria-pressed={subject === key}
-              disabled={!ok}
-              onClick={() => pickSubject(key)}
-            >
-              <span className="subject__name">{s.label}</span>
-              <span className="subject__n">{ok ? `${n} ${plural(n, 'úloha', 'úlohy', 'úloh')}` : 'čoskoro'}</span>
-            </button>
-          );
-        })}
-      </nav>
 
       <section className="today">
         <div className="today__text">
