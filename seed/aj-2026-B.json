@@ -1,0 +1,185 @@
+{
+ "test": {
+  "subject": "aj",
+  "year": 2026,
+  "variant": "B",
+  "title": "Angličtina – Stredná úroveň (B1)",
+  "duration_min": 20
+ },
+ "passages": [
+  {
+   "key": "u1",
+   "title": "Ukážka 1 – Tom’s new school",
+   "body": "Tom started at a new school in September. At first he felt nervous because he did not know anyone. On the first day, a girl called Mia showed him the library and the canteen. They both love chess, so they joined the school chess club. Now Tom meets his new friends there every Wednesday after lessons. He says that moving to a new school was scary, but it was worth it."
+  }
+ ],
+ "questions": [
+  {
+   "number": 1,
+   "kind": "short",
+   "topic": "Prítomné časy",
+   "prompt": "Dopíš správny tvar: She ___ (not like) coffee.",
+   "correct": "does not like",
+   "explanation": "Záporná veta v 3. osobe: does not + základný tvar.",
+   "accepted": [
+    "doesn't like",
+    "doesn’t like",
+    "doesnt like"
+   ],
+   "verified": true
+  },
+  {
+   "number": 2,
+   "kind": "short",
+   "topic": "Prítomné časy",
+   "prompt": "Dopíš sloveso v správnom tvare: Look! It ___ (rain).",
+   "correct": "is raining",
+   "explanation": "Look! signalizuje dej, ktorý prebieha teraz.",
+   "accepted": [],
+   "verified": true
+  },
+  {
+   "number": 3,
+   "kind": "abcd",
+   "topic": "Minulé a budúce časy",
+   "prompt": "I ___ my keys yesterday.",
+   "options": [
+    "losed",
+    "lost",
+    "lose",
+    "loses"
+   ],
+   "correct": "B",
+   "explanation": "Lose – lost – lost.",
+   "verified": true
+  },
+  {
+   "number": 4,
+   "kind": "abcd",
+   "topic": "Minulé a budúce časy",
+   "prompt": "Tomorrow I ___ my grandmother.",
+   "options": [
+    "will visit",
+    "visited",
+    "have visited",
+    "visit"
+   ],
+   "correct": "A",
+   "explanation": "Rozhodnutie alebo predpoveď o budúcnosti: will + základný tvar.",
+   "verified": true
+  },
+  {
+   "number": 5,
+   "kind": "short",
+   "topic": "Minulé a budúce časy",
+   "prompt": "Dopíš minulý čas: He ___ (write) a letter last week.",
+   "correct": "wrote",
+   "explanation": "Write – wrote – written.",
+   "accepted": [],
+   "verified": true
+  },
+  {
+   "number": 6,
+   "kind": "abcd",
+   "topic": "Slovná zásoba",
+   "prompt": "Which word is the opposite of “generous”?",
+   "options": [
+    "kind",
+    "mean",
+    "rich",
+    "happy"
+   ],
+   "correct": "B",
+   "explanation": "Generous = štedrý, mean = lakomý.",
+   "verified": true
+  },
+  {
+   "number": 7,
+   "kind": "abcd",
+   "topic": "Slovná zásoba",
+   "prompt": "I need to ___ a decision before Friday.",
+   "options": [
+    "do",
+    "make",
+    "have",
+    "give"
+   ],
+   "correct": "B",
+   "explanation": "Správne spojenie je make a decision.",
+   "verified": true
+  },
+  {
+   "number": 8,
+   "kind": "abcd",
+   "topic": "Predložky a členy",
+   "prompt": "We arrived ___ the airport at noon.",
+   "options": [
+    "in",
+    "at",
+    "to",
+    "on"
+   ],
+   "correct": "B",
+   "explanation": "Arrive at pri menších miestach, arrive in pri mestách.",
+   "verified": true
+  },
+  {
+   "number": 9,
+   "kind": "abcd",
+   "topic": "Predložky a členy",
+   "prompt": "___ Sun rises in the east.",
+   "options": [
+    "A",
+    "An",
+    "The",
+    "–"
+   ],
+   "correct": "C",
+   "explanation": "Jedinečné veci majú člen the.",
+   "verified": true
+  },
+  {
+   "number": 10,
+   "kind": "abcd",
+   "topic": "Čítanie s porozumením",
+   "prompt": "Why did Tom feel nervous at first?",
+   "options": [
+    "He did not know anyone.",
+    "He lost his bag.",
+    "He did not like chess.",
+    "He was late."
+   ],
+   "correct": "A",
+   "explanation": "V texte: he did not know anyone.",
+   "verified": true,
+   "passage": "u1"
+  },
+  {
+   "number": 11,
+   "kind": "abcd",
+   "topic": "Čítanie s porozumením",
+   "prompt": "What do Tom and Mia have in common?",
+   "options": [
+    "They live on one street.",
+    "They both love chess.",
+    "They are in the same class.",
+    "They both like the canteen."
+   ],
+   "correct": "B",
+   "explanation": "V texte: They both love chess.",
+   "verified": true,
+   "passage": "u1"
+  },
+  {
+   "number": 12,
+   "kind": "short",
+   "topic": "Čítanie s porozumením",
+   "prompt": "Napíš, v ktorý deň sa schádza šachový klub (jedno slovo):",
+   "correct": "Wednesday",
+   "explanation": "Klub sa schádza každú stredu.",
+   "accepted": [],
+   "verified": true,
+   "passage": "u1"
+  }
+ ]
+}

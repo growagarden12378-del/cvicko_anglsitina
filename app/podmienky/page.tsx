@@ -1,14 +1,14 @@
 import LegalPage from '../LegalPage';
 import { CONTACT_EMAIL, LEGAL_UPDATED, OPERATOR_NAME } from '@/lib/config';
 
-export const metadata = { title: 'Podmienky používania – Cvičko 9' };
+export const metadata = { title: 'Podmienky používania – Cvičko Angličtina' };
 
 export default function Page() {
   return (
     <LegalPage title="Podmienky používania">
       <p className="legal__date">Posledná aktualizácia: {LEGAL_UPDATED}</p>
       <p>
-        Cvičko 9 (ďalej „stránka“) je bezplatná stránka na precvičovanie úloh na Testovanie 9. Používaním stránky
+        Cvičko Angličtina (ďalej „stránka“) je bezplatná stránka na precvičovanie úloh na Testovanie 9 z angličtiny. Používaním stránky
         súhlasíš s týmito podmienkami. Ak nesúhlasíš, stránku, prosím, nepoužívaj.
       </p>
 
@@ -17,10 +17,7 @@ export default function Page() {
 
       <h2>2. Neoficiálna stránka a zdroj úloh</h2>
       <p>
-        Stránka je neoficiálna a nie je spojená so žiadnou školou ani štátnou inštitúciou. Úlohy z oficiálnych testov
-        sú materiály NIVaM (Národný inštitút vzdelávania a mládeže), Bratislava, ktorý je ich výhradným autorom a
-        zdrojom. Všetky práva k nim patria NIVaM. Ak sme niektorú úlohu vytvorili sami, je pri nej výslovne uvedené,
-        že nepochádza z originálneho testu.
+        Stránka je neoficiálna a nie je spojená so žiadnou školou ani štátnou inštitúciou. Všetky úlohy na stránke sú naše vlastné cvičné úlohy a nepochádzajú z oficiálnych testov.
       </p>
 
       <h2>3. Čo stránka ponúka</h2>

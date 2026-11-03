@@ -44,7 +44,7 @@ export default function Consent() {
       <div className="consent__box">
         {state === 'ask' ? (
           <>
-            <h2 id="consent-title">Vitaj v Cvičku 9! 👋</h2>
+            <h2 id="consent-title">Vitaj v Cvičku Angličtina! 👋</h2>
             <p>
               Skôr než začneš, potrebujeme tvoj súhlas s{' '}
               <a href="/podmienky" target="_blank" rel="noopener noreferrer">podmienkami používania</a> a{' '}

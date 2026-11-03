@@ -33,7 +33,7 @@ export default function Leaderboard() {
       <header className="top">
         <div>
           <h1 className="brand__name">Rebríček</h1>
-          <p className="brand__tag">Najlepší žiaci na Cvičku 9</p>
+          <p className="brand__tag">Najlepší žiaci na Cvičku Angličtina</p>
         </div>
         <a className="acct__btn" href="/anglictina">← Späť na cvičenie</a>
       </header>

@@ -1,7 +1,7 @@
 import LegalPage from '../LegalPage';
 import { CONTACT_EMAIL, LEGAL_UPDATED, OPERATOR_NAME } from '@/lib/config';
 
-export const metadata = { title: 'Ochrana osobných údajov – Cvičko 9' };
+export const metadata = { title: 'Ochrana osobných údajov – Cvičko Angličtina' };
 
 export default function Page() {
   return (

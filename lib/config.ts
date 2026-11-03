@@ -9,6 +9,6 @@ export const SITE_ICON: 'halloween' | 'normal' = 'halloween';
 
 // Údaje prevádzkovateľa pre stránky Podmienky a Ochrana údajov. Nastav v premenných prostredia na Verceli
 // (NEXT_PUBLIC_OPERATOR_NAME, NEXT_PUBLIC_CONTACT_EMAIL) alebo prepíš priamo tu.
-export const OPERATOR_NAME = process.env.NEXT_PUBLIC_OPERATOR_NAME || 'Oleksii Futsur (prevádzkovateľ stránky Cvičko 9)';
+export const OPERATOR_NAME = process.env.NEXT_PUBLIC_OPERATOR_NAME || 'Oleksii Futsur (prevádzkovateľ stránky Cvičko Angličtina)';
 export const CONTACT_EMAIL = process.env.NEXT_PUBLIC_CONTACT_EMAIL || 'ovfutsur@gmail.com';
 export const LEGAL_UPDATED = '31. októbra 2026';

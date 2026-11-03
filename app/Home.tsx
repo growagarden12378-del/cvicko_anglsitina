@@ -1,6 +1,8 @@
 'use client';
 
-import { useEffect, useMemo, useRef, useState } from 'react';
+import { type ComponentProps, useEffect, useMemo, useRef, useState } from 'react';
+import LevelGate from './Placement';
+import { LEVELS, clearLevel, readLevel } from '@/lib/level';
 import Journal from './Journal';
 import Account, { type User } from './Account';
 import Support from './Support';
@@ -99,7 +101,7 @@ function PenMark({ ok }: { ok: boolean }) {
   );
 }
 
-const SOURCE_NOTE = 'Výhradný autor a zdroj materiálov: NIVaM, Bratislava (testy z roku 2022 vydal jeho predchodca NÚCEM).';
+const SOURCE_NOTE = 'Ide o vlastné cvičné úlohy, nie o oficiálny test.';
 
 // Obrázok, ktorý sa po klepnutí otvorí na celú obrazovku (na mobile sa dá posúvať a priblížiť).
 function ZoomImg({ src, alt, className }: { src: string; alt: string; className?: string }) {
@@ -130,7 +132,7 @@ function ZoomImg({ src, alt, className }: { src: string; alt: string; className?
   );
 }
 
-export default function Home({
+function HomeInner({
   initialSubject = 'aj',
   initialMode = 'topics',
   initialJournal = false,
@@ -150,6 +152,8 @@ export default function Home({
   const [subject, setSubject] = useState(initialSubject);
   const [mode, setMode] = useState<Mode>(initialMode);
   const [picked, setPicked] = useState<string[]>([]);
+  const [myLevel, setMyLevel] = useState<number | null>(null);
+  useEffect(() => { setMyLevel(readLevel()?.level ?? null); }, []);
   const [testId, setTestId] = useState<number | null>(null);
   const [limit, setLimit] = useState(10);
   const [error, setError] = useState('');
@@ -387,7 +391,9 @@ export default function Home({
   const current = meta?.[subject];
   useEffect(() => {
     setPicked([]);
-    setTestId(current?.tests[0]?.id ?? null);
+    const lv = readLevel();
+    const rec = lv ? LEVELS[lv.level - 1].variant : null;
+    setTestId((current?.tests.find((t) => t.variant === rec) ?? current?.tests[0])?.id ?? null);
   }, [subject, meta]); // eslint-disable-line react-hooks/exhaustive-deps
 
   function commitProg(p: Progress) {
@@ -670,7 +676,7 @@ export default function Home({
   if (!meta) {
     return (
       <main>
-        <h1 className="brand__name">Cvičko <span className="nine">9</span></h1>
+        <h1 className="brand__name">Cvičko <span className="nine">Angličtina</span></h1>
         {metaError ? (
           <div className="notice notice--bad" role="alert">
             <p>{metaError}</p>
@@ -749,7 +755,7 @@ export default function Home({
           </button>
         </div>
 
-        <p className="source source--light">{[...new Set(qs.map((x) => x.source).filter(Boolean))].join('; ') || 'Oficiálny test'}. {SOURCE_NOTE}</p>
+        <p className="source source--light">{[...new Set(qs.map((x) => x.source).filter(Boolean))].join('; ') || 'Cvičný test'}. {SOURCE_NOTE}</p>
 
         <section className="panel">
           <div className="panel__head">
@@ -834,7 +840,7 @@ export default function Home({
 
         <section className="sheet" key={q.id}>
           <p className="sheet__meta">{q.topic}</p>
-          <p className="source">Zdroj: {q.source ?? 'oficiálny test'}. {SOURCE_NOTE}</p>
+          <p className="source">Zdroj: {q.source ?? 'cvičné úlohy'}. {SOURCE_NOTE}</p>
 
           {q.passage && (
             <div className="passage">
@@ -992,10 +998,10 @@ export default function Home({
       )}
       <header className="top">
         <div>
-          <h1 className="brand__name">Cvičko <span className="nine">9</span></h1>
+          <h1 className="brand__name">Cvičko <span className="nine">Angličtina</span></h1>
           <p className="brand__tag">Precvič si to. Zadarmo.</p>
         </div>
-        <a className="acct__btn" href="/zebricek">🏆 Rebríček</a>
+        <a className="iconbtn" href="/zebricek" aria-label="Rebríček" title="Rebríček"><span aria-hidden="true">🏆</span></a>
         <Account
           user={user}
           badge={prog.equipped.badge}
@@ -1142,9 +1148,15 @@ export default function Home({
         {mode === 'test' && (
           <div className="mode">
             <p className="mode__hint">Ako na skúške: beží časovač a výsledky uvidíš až po odovzdaní.</p>
-            <p className="source source--box">Všetky testy sú materiály NIVaM, Bratislava. {SOURCE_NOTE}</p>
+            {myLevel && (
+              <p className="mode__hint">
+                Tvoja úroveň: <b>{LEVELS[myLevel - 1].code} – {LEVELS[myLevel - 1].name}</b>. Odporúčaný test je označený ⭐.
+                <button className="pl__retake" onClick={() => { clearLevel(); window.location.reload(); }}>Zopakovať úrovňový test</button>
+              </p>
+            )}
+            <p className="source source--box">{SOURCE_NOTE}</p>
             <div className="tlist">
-              {current?.tests.map((t) => (
+              {[...(current?.tests ?? [])].sort((a, b) => Number(b.variant === (myLevel ? LEVELS[myLevel - 1].variant : '')) - Number(a.variant === (myLevel ? LEVELS[myLevel - 1].variant : ''))).map((t) => (
                 <button
                   key={t.id}
                   className={'trow trow--test' + (testId === t.id ? ' trow--on' : '')}
@@ -1152,7 +1164,7 @@ export default function Home({
                   onClick={() => setTestId(t.id)}
                 >
                   <span className="trow__box trow__box--radio" aria-hidden="true" />
-                  <span className="trow__name">{t.title || `${t.year} – variant ${t.variant}`}</span>
+                  <span className="trow__name">{myLevel && t.variant === LEVELS[myLevel - 1].variant ? '⭐ ' : ''}{t.title || `${t.year} – variant ${t.variant}`}</span>
                   <span className="trow__n">
                     {t.n ? `${t.n} ${plural(t.n, 'úloha', 'úlohy', 'úloh')}` : ''}
                     {t.n && t.duration_min ? ' · ' : ''}
@@ -1205,7 +1217,7 @@ export default function Home({
           ? 'Postup (XP, séria, zápisník chýb) sa ukladá do tvojho účtu.'
           : 'Bez účtu sa postup (XP, séria, zápisník chýb) ukladá iba v tomto prehliadači. Vytvor si účet a bude ho mať aj každé tvoje zariadenie.'}
       </p>
-      <p className="foot">Neoficiálna stránka. Všetky testy a úlohy pochádzajú z verejne dostupných materiálov Testovania 9. Výhradný autor a zdroj materiálov: NIVaM, Bratislava (testy z roku 2022 vydal jeho predchodca NÚCEM).</p>
+      <p className="foot">Neoficiálna stránka. Všetky úlohy sú vlastné cvičné úlohy a nepochádzajú z oficiálnych testov.</p>
       <p className="foot">
         <a href="/podmienky">Podmienky používania</a> · <a href="/ochrana-udajov">Ochrana osobných údajov</a>
       </p>
@@ -1240,4 +1252,13 @@ function answerText(q: Q, value: string) {
     return text ? `${value.toUpperCase()} – ${text}` : value;
   }
   return value;
+}
+
+
+export default function Home(props: ComponentProps<typeof HomeInner>) {
+  return (
+    <LevelGate>
+      <HomeInner {...props} />
+    </LevelGate>
+  );
 }

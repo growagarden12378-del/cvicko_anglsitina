@@ -4,7 +4,7 @@ import type { ReactNode } from 'react';
 export default function LegalPage({ title, children }: { title: string; children: ReactNode }) {
   return (
     <main className="legal">
-      <Link href="/" className="legal__back">← Späť na Cvičko 9</Link>
+      <Link href="/" className="legal__back">← Späť na Cvičko Angličtina</Link>
       <article className="legal__box">
         <h1>{title}</h1>
         {children}

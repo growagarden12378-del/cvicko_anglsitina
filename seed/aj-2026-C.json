@@ -1,0 +1,168 @@
+{
+ "test": {
+  "subject": "aj",
+  "year": 2026,
+  "variant": "C",
+  "title": "Angličtina – Pokročilá úroveň (B1+–B2)",
+  "duration_min": 20
+ },
+ "passages": [
+  {
+   "key": "u2",
+   "title": "Ukážka 2 – Plastic in the sea",
+   "body": "Every year, millions of tonnes of plastic end up in the oceans. Sea animals often mistake it for food, and many of them get sick. Scientists say that most plastic comes from the land, not from ships. Some towns now ban plastic bags, and volunteers clean beaches at weekends. Experts agree that the best solution is to use less plastic in the first place."
+  }
+ ],
+ "questions": [
+  {
+   "number": 1,
+   "kind": "abcd",
+   "topic": "Minulé a budúce časy",
+   "prompt": "Look at those clouds! It ___ rain.",
+   "options": [
+    "is going to",
+    "will be",
+    "was",
+    "has"
+   ],
+   "correct": "A",
+   "explanation": "Vidíme znak, že sa niečo stane: going to.",
+   "verified": true
+  },
+  {
+   "number": 2,
+   "kind": "abcd",
+   "topic": "Modálne slovesá a podmienky",
+   "prompt": "You ___ wear a seat belt. It is the law.",
+   "options": [
+    "must",
+    "can",
+    "might",
+    "may"
+   ],
+   "correct": "A",
+   "explanation": "Must vyjadruje povinnosť.",
+   "verified": true
+  },
+  {
+   "number": 3,
+   "kind": "abcd",
+   "topic": "Modálne slovesá a podmienky",
+   "prompt": "If it rains tomorrow, we ___ at home.",
+   "options": [
+    "stay",
+    "will stay",
+    "would stay",
+    "stayed"
+   ],
+   "correct": "B",
+   "explanation": "Reálna podmienka: if + prítomný čas, will.",
+   "verified": true
+  },
+  {
+   "number": 4,
+   "kind": "abcd",
+   "topic": "Modálne slovesá a podmienky",
+   "prompt": "If I ___ rich, I would buy a boat.",
+   "options": [
+    "am",
+    "was",
+    "were",
+    "will be"
+   ],
+   "correct": "C",
+   "explanation": "Nereálna podmienka: if I were.",
+   "verified": true
+  },
+  {
+   "number": 5,
+   "kind": "short",
+   "topic": "Modálne slovesá a podmienky",
+   "prompt": "Dopíš modálne sloveso: ___ I open the window? (Môžem otvoriť okno?)",
+   "correct": "Can",
+   "explanation": "Žiadosť o dovolenie: can, may alebo could.",
+   "accepted": [
+    "May",
+    "Could"
+   ],
+   "verified": true
+  },
+  {
+   "number": 6,
+   "kind": "abcd",
+   "topic": "Modálne slovesá a podmienky",
+   "prompt": "You ___ park here. It is forbidden.",
+   "options": [
+    "mustn’t",
+    "don’t have to",
+    "needn’t",
+    "may"
+   ],
+   "correct": "A",
+   "explanation": "Mustn’t = zákaz.",
+   "verified": true
+  },
+  {
+   "number": 7,
+   "kind": "abcd",
+   "topic": "Čítanie s porozumením",
+   "prompt": "According to the text, where does most plastic come from?",
+   "options": [
+    "Ships",
+    "The land",
+    "Fishermen",
+    "Rivers only"
+   ],
+   "correct": "B",
+   "explanation": "Text hovorí o súši (the land).",
+   "verified": true,
+   "passage": "u2"
+  },
+  {
+   "number": 8,
+   "kind": "abcd",
+   "topic": "Čítanie s porozumením",
+   "prompt": "What do experts recommend?",
+   "options": [
+    "Cleaning beaches only.",
+    "Using less plastic.",
+    "Feeding sea animals.",
+    "Banning all ships."
+   ],
+   "correct": "B",
+   "explanation": "Najlepšie riešenie je používať menej plastu.",
+   "verified": true,
+   "passage": "u2"
+  },
+  {
+   "number": 9,
+   "kind": "abcd",
+   "topic": "Minulé a budúce časy",
+   "prompt": "By 2020 she ___ in London for five years.",
+   "options": [
+    "had lived",
+    "has lived",
+    "was living",
+    "lives"
+   ],
+   "correct": "A",
+   "explanation": "By 2020 odkazuje na minulosť: predminulý čas (past perfect).",
+   "verified": true
+  },
+  {
+   "number": 10,
+   "kind": "abcd",
+   "topic": "Predložky a členy",
+   "prompt": "He denied ___ the window.",
+   "options": [
+    "to break",
+    "breaking",
+    "break",
+    "broke"
+   ],
+   "correct": "B",
+   "explanation": "Po slovese deny nasleduje tvar -ing.",
+   "verified": true
+  }
+ ]
+}

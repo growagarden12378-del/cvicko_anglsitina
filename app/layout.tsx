@@ -10,7 +10,7 @@ export const metadata = {
     ],
     apple: `/icon-${SITE_ICON}.png`,
   },
-  title: 'Cvičko 9 – precvič si to zadarmo',
+  title: 'Cvičko Angličtina – precvič si to zadarmo',
   description: 'Bezplatný tréning angličtiny pre 9. ročník: výber tém, zápisník chýb, celé testy s časovačom.',
 };
 
