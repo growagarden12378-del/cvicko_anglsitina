@@ -6,6 +6,7 @@ import { CEFR, poolFor } from '@/lib/cefr';
 import { clearLevel } from '@/lib/level';
 import Journal from './Journal';
 import Sites from './Sites';
+import Loader from './Loader';
 import Account, { type User } from './Account';
 import Support from './Support';
 import Consent from './Consent';
@@ -683,10 +684,7 @@ function HomeInner({
             <button className="btn btn--primary" onClick={loadMeta}>Skúsiť znova</button>
           </div>
         ) : (
-          <p className="loading" role="status">
-            <span className="loading__pencil" aria-hidden="true" />
-            {slow ? 'Databáza sa práve budí, môže to chvíľu trvať…' : 'Načítavam úlohy…'}
-          </p>
+          <Loader label={slow ? 'Databáza sa práve budí, môže to chvíľu trvať…' : 'Načítavam úlohy…'} />
         )}
         {noteEl}
       </main>

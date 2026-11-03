@@ -1203,3 +1203,27 @@ body.halloween::after { content: '🦇'; left: 82%; animation-duration: 18s; ani
   .top > div:first-child { flex: 1 1 100%; margin-right: 0; }
   .sites__menu, .acct__menu { left: 0; right: auto; }
 }
+
+/* Načítavanie: točiaci sa kruh (alebo ouroboros) + tip */
+.ld { display: flex; flex-direction: column; align-items: center; gap: 14px; margin: 70px auto 0; max-width: 340px; text-align: center; color: #fff; }
+.ld__ring { position: relative; width: 84px; height: 84px; animation: ld-spin 1s linear infinite; }
+.ld__arc { position: absolute; inset: 0; border-radius: 50%; background: conic-gradient(from 0deg, rgba(255, 255, 255, 0) 0%, #fff 100%); -webkit-mask: radial-gradient(farthest-side, transparent calc(100% - 9px), #000 calc(100% - 8px)); mask: radial-gradient(farthest-side, transparent calc(100% - 9px), #000 calc(100% - 8px)); }
+.ld__dot { position: absolute; top: 0; left: 50%; width: 9px; height: 9px; margin-left: -4.5px; border-radius: 50%; background: #fff; }
+/* Ouroboros: sivý panel, otáčajúci sa had a symboly v rohoch (pravý horný, pravý dolný, ľavý dolný, ľavý horný) */
+.ld__stage { position: relative; width: min(86vw, 340px); aspect-ratio: 4 / 3; border-radius: 18px; overflow: hidden; background: radial-gradient(circle at 30% 25%, #dcdcdc, #7a7a7a); border: 3px solid #14123f; box-shadow: 5px 5px 0 #14123f; }
+.ld__img { position: absolute; left: 50%; top: 50%; height: 94%; width: auto; transform: translate(-50%, -50%); animation: ld-orbit 9s linear infinite; }
+.ld__ico { position: absolute; width: 17%; aspect-ratio: 1; color: #111; opacity: 0; filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.95)); animation: ld-ico 8s ease-in-out infinite; }
+.ld__ico svg { display: block; width: 100%; height: 100%; }
+.ld__ico--tr { top: 6%; right: 5%; animation-delay: 0.3s; }
+.ld__ico--br { bottom: 6%; right: 5%; animation-delay: 2.3s; }
+.ld__ico--bl { bottom: 6%; left: 5%; animation-delay: 4.3s; }
+.ld__ico--tl { top: 6%; left: 5%; animation-delay: 6.3s; }
+.ld__sound { position: absolute; left: 50%; bottom: 4px; transform: translateX(-50%); border: 0; background: rgba(255, 255, 255, 0.55); border-radius: 999px; padding: 1px 10px; font-size: 14px; cursor: pointer; }
+@keyframes ld-orbit { from { transform: translate(-50%, -50%) rotate(0deg); } to { transform: translate(-50%, -50%) rotate(360deg); } }
+@keyframes ld-ico { 0% { opacity: 0; transform: scale(0.5) rotate(-20deg); } 5% { opacity: 1; transform: scale(1) rotate(0); } 21% { opacity: 1; transform: scale(1); } 25%, 100% { opacity: 0; transform: scale(0.5); } }
+.ld__label { margin: 4px 0 0; font-weight: 800; font-size: 1.1rem; }
+.ld__tip { margin: 0; min-height: 3em; font-size: 0.95rem; line-height: 1.4; color: rgba(255, 255, 255, 0.85); animation: ld-fade 0.5s ease both; }
+@keyframes ld-spin { to { transform: rotate(360deg); } }
+@keyframes ld-pulse { 0%, 100% { filter: drop-shadow(0 0 0 rgba(255, 212, 59, 0)); } 50% { filter: drop-shadow(0 0 14px rgba(255, 212, 59, 0.7)); } }
+@keyframes ld-fade { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+@media (prefers-reduced-motion: reduce) { .ld__ring { animation-duration: 2.5s !important; } .ld__img { animation-duration: 20s !important; } .ld__ico { animation-duration: 16s !important; } }
