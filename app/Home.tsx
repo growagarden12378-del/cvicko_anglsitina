@@ -6,7 +6,7 @@ import { CEFR, poolFor } from '@/lib/cefr';
 import { clearLevel } from '@/lib/level';
 import Journal from './Journal';
 import Sites from './Sites';
-import Loader from './Loader';
+import Loader, { useLoadingMin } from './Loader';
 import Account, { type User } from './Account';
 import Support from './Support';
 import Consent from './Consent';
@@ -161,6 +161,7 @@ function HomeInner({
 
   // ---------- postup (ukladá sa v prehliadači) ----------
   const [prog, setProg] = useState<Progress>(empty());
+  const minDone = useLoadingMin();
   const [user, setUser] = useState<User | null>(null);
   const [syncing, setSyncing] = useState(false);
   const userRef = useRef<User | null>(null);
@@ -674,7 +675,7 @@ function HomeInner({
   ) : null;
 
   // ---------- načítavanie ----------
-  if (!meta) {
+  if (!meta || !minDone) {
     return (
       <main>
         <h1 className="brand__name">Cvičko <span className="nine">Angličtina</span></h1>

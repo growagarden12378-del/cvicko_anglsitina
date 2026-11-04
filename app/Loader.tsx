@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 
 const TIPS = [
   'Nové slovo si povedz nahlas aj vo vete, zapamätáš si ho oveľa lepšie.',
@@ -17,6 +17,30 @@ const TIPS = [
   'Pri čítaní s porozumením si najprv prečítaj otázku a potom text.',
 ];
 const SNAKE_TIP = 'Tip: The loop never ends. 🐍';
+
+// Najkratšia doba zobrazenia načítavania (ms), aj keď sú úlohy hotové skôr. Zmeň podľa chuti.
+export const RING_MIN_MS = 4000; // točiaci sa kruh
+export const SNAKE_MIN_MS = 9000; // had: aspoň jeden celý cyklus symbolov (8 s)
+
+// Výber (kruh/had, tip) sa urobí raz na prehliadači, aby sa Loader aj odpočet zhodovali
+let choice: { snake: boolean; tip: number } | null = null;
+function getChoice() {
+  if (!choice) {
+    const forced = new URLSearchParams(window.location.search).get('snake') === '1';
+    choice = { snake: forced || Math.random() < 0.01, tip: Math.floor(Math.random() * TIPS.length) };
+  }
+  return choice;
+}
+
+// Vráti true, až keď uplynul minimálny čas načítavania
+export function useLoadingMin(): boolean {
+  const [done, setDone] = useState(false);
+  useEffect(() => {
+    const t = setTimeout(() => setDone(true), getChoice().snake ? SNAKE_MIN_MS : RING_MIN_MS);
+    return () => clearTimeout(t);
+  }, []);
+  return done;
+}
 
 // ---- ikonky (čierne, so žiarou), v poradí ako v animácii: pravý horný, pravý dolný, ľavý dolný, ľavý horný
 const S = { fill: 'none', stroke: 'currentColor', strokeWidth: 4, strokeLinecap: 'round', strokeLinejoin: 'round' } as const;
@@ -63,76 +87,15 @@ function IconScales() {
   );
 }
 
-// ---- vlastná zvuková slučka (generovaná, bez hudobných súborov): pomalý akordový podklad a jemné arpeggio
-function startLoop(): () => void {
-  const AC = window.AudioContext || (window as any).webkitAudioContext;
-  const ctx: AudioContext = new AC();
-  const master = ctx.createGain();
-  master.gain.setValueAtTime(0, ctx.currentTime);
-  master.gain.linearRampToValueAtTime(0.22, ctx.currentTime + 1.5);
-  master.connect(ctx.destination);
-
-  const beat = 60 / 76;
-  const bar = beat * 4;
-  const chords = [
-    [220.0, 261.63, 329.63], // Am
-    [174.61, 220.0, 261.63], // F
-    [261.63, 329.63, 392.0], // C
-    [196.0, 246.94, 293.66], // G
-  ];
-  const note = (f: number, t: number, dur: number, type: OscillatorType, vol: number, attack = 0.02) => {
-    const o = ctx.createOscillator();
-    const g = ctx.createGain();
-    o.type = type;
-    o.frequency.value = f;
-    g.gain.setValueAtTime(0.0001, t);
-    g.gain.linearRampToValueAtTime(vol, t + attack);
-    g.gain.exponentialRampToValueAtTime(0.0001, t + dur);
-    o.connect(g).connect(master);
-    o.start(t);
-    o.stop(t + dur + 0.05);
-  };
-
-  let next = ctx.currentTime + 0.1;
-  let timer: ReturnType<typeof setTimeout>;
-  const schedule = () => {
-    chords.forEach((c, b) => {
-      const t0 = next + b * bar;
-      note(c[0] / 2, t0, bar * 0.98, 'sine', 0.35, 0.3); // bas
-      c.forEach((f) => note(f, t0, bar * 0.98, 'sine', 0.12, 0.6)); // pad
-      const pat = [0, 1, 2, 1, 0, 1, 2, 1];
-      pat.forEach((i, k) => note(c[i] * 2, t0 + k * (beat / 2), beat * 0.9, 'triangle', 0.1)); // arpeggio
-    });
-    next += chords.length * bar;
-    timer = setTimeout(schedule, Math.max(0, (next - ctx.currentTime - 1) * 1000));
-  };
-  schedule();
-
-  return () => {
-    clearTimeout(timer);
-    try {
-      master.gain.cancelScheduledValues(ctx.currentTime);
-      master.gain.setValueAtTime(master.gain.value, ctx.currentTime);
-      master.gain.linearRampToValueAtTime(0, ctx.currentTime + 0.4);
-      setTimeout(() => ctx.close().catch(() => {}), 500);
-    } catch {
-      // ignoruj
-    }
-  };
-}
-
 export default function Loader({ label }: { label: string }) {
   const [snake, setSnake] = useState(false);
   const [tip, setTip] = useState<number | null>(null);
-  const [sound, setSound] = useState(false);
-  const stop = useRef<null | (() => void)>(null);
 
   // náhodný výber až v prehliadači, aby sa server a prehliadač nelíšili (1 % šanca na hada, ?snake=1 ho vynúti)
   useEffect(() => {
-    const forced = new URLSearchParams(window.location.search).get('snake') === '1';
-    setSnake(forced || Math.random() < 0.01);
-    setTip(Math.floor(Math.random() * TIPS.length));
-    return () => stop.current?.();
+    const c = getChoice();
+    setSnake(c.snake);
+    setTip(c.tip);
   }, []);
 
   useEffect(() => {
@@ -140,21 +103,6 @@ export default function Loader({ label }: { label: string }) {
     const t = setInterval(() => setTip((i) => ((i ?? 0) + 1) % TIPS.length), 5000);
     return () => clearInterval(t);
   }, [tip === null, snake]); // eslint-disable-line react-hooks/exhaustive-deps
-
-  function toggleSound() {
-    if (sound) {
-      stop.current?.();
-      stop.current = null;
-      setSound(false);
-    } else {
-      try {
-        stop.current = startLoop();
-        setSound(true);
-      } catch {
-        // zvuk nie je dostupný
-      }
-    }
-  }
 
   return (
     <div className="ld" role="status" aria-live="polite">
@@ -165,9 +113,6 @@ export default function Loader({ label }: { label: string }) {
           <span className="ld__ico ld__ico--br"><IconRecycle /></span>
           <span className="ld__ico ld__ico--bl"><IconHourglass /></span>
           <span className="ld__ico ld__ico--tl"><IconScales /></span>
-          <button type="button" className="ld__sound" onClick={toggleSound} aria-pressed={sound} aria-label={sound ? 'Vypnúť hudbu' : 'Zapnúť hudbu'} title={sound ? 'Vypnúť hudbu' : 'Zapnúť hudbu'}>
-            {sound ? '🔊' : '🔇'}
-          </button>
         </div>
       ) : (
         <div className="ld__ring" aria-hidden="true">
