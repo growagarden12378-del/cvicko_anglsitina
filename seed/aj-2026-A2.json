@@ -4,13 +4,18 @@
   "year": 2026,
   "variant": "A2",
   "title": "Angličtina – A2 Mierne pokročilý",
-  "duration_min": 30
+  "duration_min": 35
  },
  "passages": [
   {
    "key": "u5",
    "title": "Ukážka 5 – Weekend plans",
    "body": "This weekend my family is going to visit the zoo. We are going to leave at nine o’clock, because it takes two hours by car. My little brother wants to see the elephants, but I like the monkeys best. After lunch we will have an ice cream and then we will drive home."
+  },
+  {
+   "key": "u10",
+   "title": "Ukážka 10 – A school trip",
+   "body": "Last Friday our class went on a trip to a castle. We travelled by train and it took one hour. The guide told us many stories about knights. We had a picnic in the garden because the weather was lovely. I bought a postcard for my grandmother."
   }
  ],
  "questions": [
@@ -451,6 +456,192 @@
    "verified": true,
    "passage": "u5",
    "number": 31
+  },
+  {
+   "kind": "abcd",
+   "topic": "Prítomné časy",
+   "prompt": "She ___ TV at the moment.",
+   "options": [
+    "watched",
+    "watch",
+    "is watching",
+    "watches"
+   ],
+   "correct": "C",
+   "explanation": "At the moment = práve teraz, preto present continuous: is + -ing. Preklad: Práve teraz pozerá televíziu.",
+   "verified": true,
+   "number": 32
+  },
+  {
+   "kind": "short",
+   "topic": "Prítomné časy",
+   "prompt": "Dopíš: My brother ___ (not eat) meat.",
+   "correct": "does not eat",
+   "explanation": "Záporná veta pri he/she/it: does not + základný tvar. Preklad: Môj brat nejedáva mäso.",
+   "accepted": [
+    "doesn't eat",
+    "doesn’t eat",
+    "doesnt eat"
+   ],
+   "verified": true,
+   "number": 33
+  },
+  {
+   "kind": "abcd",
+   "topic": "Minulé a budúce časy",
+   "prompt": "Tomorrow it ___ be sunny.",
+   "options": [
+    "will",
+    "has",
+    "was",
+    "did"
+   ],
+   "correct": "A",
+   "explanation": "Predpoveď do budúcnosti: will + základný tvar. Preklad: Zajtra bude slnečno.",
+   "verified": true,
+   "number": 34
+  },
+  {
+   "kind": "abcd",
+   "topic": "Minulé a budúce časy",
+   "prompt": "I ___ a cold last week.",
+   "options": [
+    "have",
+    "has",
+    "having",
+    "had"
+   ],
+   "correct": "D",
+   "explanation": "Last week = minulosť. Have – had – had. Preklad: Minulý týždeň som mal nádchu.",
+   "verified": true,
+   "number": 35
+  },
+  {
+   "kind": "abcd",
+   "topic": "Slovná zásoba",
+   "prompt": "Which word means „unavený“?",
+   "options": [
+    "hungry",
+    "busy",
+    "tired",
+    "angry"
+   ],
+   "correct": "C",
+   "explanation": "Tired = unavený. Hungry = hladný, angry = nahnevaný, busy = zaneprázdnený.",
+   "verified": true,
+   "number": 36
+  },
+  {
+   "kind": "short",
+   "topic": "Slovná zásoba",
+   "prompt": "Dopíš slovo: The opposite of “difficult” is ______.",
+   "correct": "easy",
+   "explanation": "Difficult = ťažký, easy = ľahký, jednoduchý.",
+   "accepted": [],
+   "verified": true,
+   "number": 37
+  },
+  {
+   "kind": "abcd",
+   "topic": "Slovná zásoba",
+   "prompt": "Which word is a vegetable?",
+   "options": [
+    "apple",
+    "banana",
+    "carrot",
+    "cherry"
+   ],
+   "correct": "C",
+   "explanation": "Carrot = mrkva (zelenina). Apple = jablko, banana = banán, cherry = čerešňa sú ovocie.",
+   "verified": true,
+   "number": 38
+  },
+  {
+   "kind": "abcd",
+   "topic": "Predložky a členy",
+   "prompt": "We arrived ___ London in the evening.",
+   "options": [
+    "at",
+    "in",
+    "to",
+    "on"
+   ],
+   "correct": "B",
+   "explanation": "Pri slovese arrive používame pri mestách in: arrive in London. Pri menších miestach at: arrive at the station.",
+   "verified": true,
+   "number": 39
+  },
+  {
+   "kind": "abcd",
+   "topic": "Modálne slovesá a podmienky",
+   "prompt": "You ___ be quiet in the library.",
+   "options": [
+    "can",
+    "must",
+    "did",
+    "would"
+   ],
+   "correct": "B",
+   "explanation": "Must vyjadruje povinnosť alebo pravidlo. Preklad: V knižnici musíš byť ticho.",
+   "verified": true,
+   "number": 40
+  },
+  {
+   "kind": "short",
+   "topic": "Modálne slovesá a podmienky",
+   "prompt": "Dopíš: If it rains, we ___ (stay) at home.",
+   "correct": "will stay",
+   "explanation": "Reálna podmienka: if + prítomný čas, will + základný tvar. Preklad: Ak bude pršať, zostaneme doma.",
+   "accepted": [
+    "'ll stay",
+    "’ll stay",
+    "will stay at home"
+   ],
+   "verified": true,
+   "number": 41
+  },
+  {
+   "kind": "abcd",
+   "topic": "Čítanie s porozumením",
+   "prompt": "How did the class travel?",
+   "options": [
+    "By bus",
+    "By train",
+    "By car",
+    "On foot"
+   ],
+   "correct": "B",
+   "explanation": "V texte: „We travelled by train“.",
+   "verified": true,
+   "passage": "u10",
+   "number": 42
+  },
+  {
+   "kind": "abcd",
+   "topic": "Čítanie s porozumením",
+   "prompt": "What did the writer buy?",
+   "options": [
+    "A postcard",
+    "A map",
+    "A toy",
+    "A book"
+   ],
+   "correct": "A",
+   "explanation": "V texte: „I bought a postcard for my grandmother.“",
+   "verified": true,
+   "passage": "u10",
+   "number": 43
+  },
+  {
+   "kind": "short",
+   "topic": "Čítanie s porozumením",
+   "prompt": "Napíš, o kom rozprávala sprievodkyňa (jedno slovo):",
+   "correct": "knights",
+   "explanation": "V texte: „stories about knights“. Knight = rytier.",
+   "accepted": [],
+   "verified": true,
+   "passage": "u10",
+   "number": 44
   }
  ]
 }

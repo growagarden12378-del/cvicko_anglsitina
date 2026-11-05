@@ -4,7 +4,7 @@
   "year": 2026,
   "variant": "C1",
   "title": "Angličtina – C1 Expert",
-  "duration_min": 35
+  "duration_min": 40
  },
  "passages": [
   {
@@ -16,6 +16,11 @@
    "key": "u8",
    "title": "Ukážka 8 – The value of sleep",
    "body": "Although many people believe that they can function perfectly well on five hours of sleep, research suggests otherwise. Chronic sleep deprivation has been linked to poor concentration, weakened immunity and even a higher risk of heart disease. Researchers stress that it is not only the quantity of sleep that matters, but also its quality: regular bedtimes and a dark, quiet room can make a considerable difference."
+  },
+  {
+   "key": "u13",
+   "title": "Ukážka 13 – Social media",
+   "body": "Although social media promises to connect people, a growing number of studies suggest that heavy use is associated with loneliness. Experts argue that scrolling through carefully edited images of other people’s lives encourages unfavourable comparisons. Nevertheless, they stress that the platforms themselves are not inherently harmful; it is the way they are used that determines their impact."
   }
  ],
  "questions": [
@@ -399,6 +404,199 @@
    "verified": true,
    "passage": "u8",
    "number": 25
+  },
+  {
+   "kind": "abcd",
+   "topic": "Prítomné časy",
+   "prompt": "Rarely ___ such a beautiful view.",
+   "options": [
+    "I have seen",
+    "I saw",
+    "do I see",
+    "have I seen"
+   ],
+   "correct": "D",
+   "explanation": "Po záporných alebo obmedzujúcich príslovkách (rarely, seldom, never) na začiatku vety nasleduje obrátený slovosled.",
+   "verified": true,
+   "number": 26
+  },
+  {
+   "kind": "abcd",
+   "topic": "Prítomné časy",
+   "prompt": "It ___ that prices will rise again next year.",
+   "options": [
+    "is expecting",
+    "expected",
+    "is expected",
+    "expects"
+   ],
+   "correct": "C",
+   "explanation": "Neosobné trpné vyjadrenie: It is expected / believed / said that…",
+   "verified": true,
+   "number": 27
+  },
+  {
+   "kind": "abcd",
+   "topic": "Minulé a budúce časy",
+   "prompt": "I ___ you if I had had your number.",
+   "options": [
+    "would call",
+    "called",
+    "had called",
+    "would have called"
+   ],
+   "correct": "D",
+   "explanation": "Podmienka v minulosti: if + past perfect, would have + 3. tvar.",
+   "verified": true,
+   "number": 28
+  },
+  {
+   "kind": "abcd",
+   "topic": "Minulé a budúce časy",
+   "prompt": "By June, I ___ here for ten years.",
+   "options": [
+    "work",
+    "am working",
+    "will work",
+    "will have been working"
+   ],
+   "correct": "D",
+   "explanation": "Future perfect continuous: dôraz na trvanie deja do budúceho bodu.",
+   "verified": true,
+   "number": 29
+  },
+  {
+   "kind": "abcd",
+   "topic": "Slovná zásoba",
+   "prompt": "Čo znamená „ambiguous“?",
+   "options": [
+    "zbytočný",
+    "jasný",
+    "nebezpečný",
+    "nejednoznačný"
+   ],
+   "correct": "D",
+   "explanation": "Ambiguous = nejednoznačný, dvojzmyselný.",
+   "verified": true,
+   "number": 30
+  },
+  {
+   "kind": "short",
+   "topic": "Slovná zásoba",
+   "prompt": "Dopíš slovo: The opposite of “temporary” is ______.",
+   "correct": "permanent",
+   "explanation": "Temporary = dočasný, permanent = trvalý.",
+   "accepted": [],
+   "verified": true,
+   "number": 31
+  },
+  {
+   "kind": "abcd",
+   "topic": "Predložky a členy",
+   "prompt": "She is renowned ___ her cooking.",
+   "options": [
+    "for",
+    "with",
+    "of",
+    "at"
+   ],
+   "correct": "A",
+   "explanation": "Be renowned for = byť známy čím.",
+   "verified": true,
+   "number": 32
+  },
+  {
+   "kind": "abcd",
+   "topic": "Predložky a členy",
+   "prompt": "I have no objection ___ your plan.",
+   "options": [
+    "for",
+    "with",
+    "to",
+    "of"
+   ],
+   "correct": "C",
+   "explanation": "Objection to = námietka voči niečomu.",
+   "verified": true,
+   "number": 33
+  },
+  {
+   "kind": "abcd",
+   "topic": "Modálne slovesá a podmienky",
+   "prompt": "You ___ not have taken the money without asking.",
+   "options": [
+    "will",
+    "should",
+    "would",
+    "must"
+   ],
+   "correct": "B",
+   "explanation": "Should not have + 3. tvar = výčitka (nemal si).",
+   "verified": true,
+   "number": 34
+  },
+  {
+   "kind": "abcd",
+   "topic": "Modálne slovesá a podmienky",
+   "prompt": "He ___ have been at home; the lights were off.",
+   "options": [
+    "won’t",
+    "can’t",
+    "mustn’t",
+    "shouldn’t"
+   ],
+   "correct": "B",
+   "explanation": "Can’t have + 3. tvar = istota, že sa to nestalo.",
+   "verified": true,
+   "number": 35
+  },
+  {
+   "kind": "abcd",
+   "topic": "Čítanie s porozumením",
+   "prompt": "What do studies suggest about heavy social media use?",
+   "options": [
+    "It is linked to loneliness.",
+    "It has no effect.",
+    "It cures loneliness.",
+    "It improves friendships."
+   ],
+   "correct": "A",
+   "explanation": "V texte: „heavy use is associated with loneliness“.",
+   "verified": true,
+   "passage": "u13",
+   "number": 36
+  },
+  {
+   "kind": "abcd",
+   "topic": "Čítanie s porozumením",
+   "prompt": "Why can scrolling be harmful, according to experts?",
+   "options": [
+    "It encourages unfavourable comparisons.",
+    "It wastes electricity.",
+    "It makes people taller.",
+    "It improves sleep."
+   ],
+   "correct": "A",
+   "explanation": "V texte: „encourages unfavourable comparisons“.",
+   "verified": true,
+   "passage": "u13",
+   "number": 37
+  },
+  {
+   "kind": "abcd",
+   "topic": "Čítanie s porozumením",
+   "prompt": "What is the experts’ final point?",
+   "options": [
+    "The impact depends on how platforms are used.",
+    "Only adults are affected.",
+    "Social media should be banned.",
+    "All platforms are harmful."
+   ],
+   "correct": "A",
+   "explanation": "V texte: „it is the way they are used that determines their impact“.",
+   "verified": true,
+   "passage": "u13",
+   "number": 38
   }
  ]
 }

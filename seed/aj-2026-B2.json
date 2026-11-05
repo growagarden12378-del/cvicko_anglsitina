@@ -4,7 +4,7 @@
   "year": 2026,
   "variant": "B2",
   "title": "Angličtina – B2 Pokročilý",
-  "duration_min": 40
+  "duration_min": 45
  },
  "passages": [
   {
@@ -16,6 +16,11 @@
    "key": "u7",
    "title": "Ukážka 7 – Electric cars",
    "body": "Electric cars are becoming more popular every year. They produce no exhaust fumes, which makes the air in cities cleaner. Nevertheless, many drivers hesitate to buy one because of the high price and the lack of charging stations. Governments in several countries offer financial support to encourage people to switch. Experts predict that within twenty years most new cars will be electric."
+  },
+  {
+   "key": "u12",
+   "title": "Ukážka 12 – Cities and bikes",
+   "body": "Many cities are building more bike lanes to reduce traffic and pollution. Cycling is cheap, healthy and often faster than driving in crowded streets. However, some drivers complain that bike lanes take up valuable parking space. City planners respond that every cyclist means one car less on the road, which benefits everybody in the long run."
   }
  ],
  "questions": [
@@ -533,6 +538,199 @@
    "verified": true,
    "passage": "u7",
    "number": 34
+  },
+  {
+   "kind": "abcd",
+   "topic": "Prítomné časy",
+   "prompt": "I ___ English for five years, so I understand a lot.",
+   "options": [
+    "am studying",
+    "studied",
+    "have been studying",
+    "study"
+   ],
+   "correct": "C",
+   "explanation": "For + doba trvania a dej trvá doteraz: present perfect continuous.",
+   "verified": true,
+   "number": 35
+  },
+  {
+   "kind": "abcd",
+   "topic": "Prítomné časy",
+   "prompt": "The train ___ at 6 p.m. tomorrow.",
+   "options": [
+    "leaving",
+    "has left",
+    "left",
+    "leaves"
+   ],
+   "correct": "D",
+   "explanation": "Cestovný poriadok (pevný rozpis) vyjadrujeme prítomným časom.",
+   "verified": true,
+   "number": 36
+  },
+  {
+   "kind": "abcd",
+   "topic": "Minulé a budúce časy",
+   "prompt": "She ___ for an hour when he finally arrived.",
+   "options": [
+    "was waiting",
+    "has waited",
+    "waits",
+    "had been waiting"
+   ],
+   "correct": "D",
+   "explanation": "Past perfect continuous: dej trval až do určitého bodu v minulosti.",
+   "verified": true,
+   "number": 37
+  },
+  {
+   "kind": "abcd",
+   "topic": "Minulé a budúce časy",
+   "prompt": "This time next week I ___ on the beach in Spain.",
+   "options": [
+    "lie",
+    "have lain",
+    "will be lying",
+    "lay"
+   ],
+   "correct": "C",
+   "explanation": "Future continuous (will be + -ing): dej bude v danom čase prebiehať.",
+   "verified": true,
+   "number": 38
+  },
+  {
+   "kind": "abcd",
+   "topic": "Slovná zásoba",
+   "prompt": "Which word is closest in meaning to “reduce”?",
+   "options": [
+    "repeat",
+    "produce",
+    "decrease",
+    "increase"
+   ],
+   "correct": "C",
+   "explanation": "Reduce = znížiť, zmenšiť, rovnako ako decrease.",
+   "verified": true,
+   "number": 39
+  },
+  {
+   "kind": "short",
+   "topic": "Slovná zásoba",
+   "prompt": "Dopíš slovo (začína na h): Someone who has no home is ______.",
+   "correct": "homeless",
+   "explanation": "Homeless = bezdomovec. Prípona -less znamená „bez“ (hopeless, careless).",
+   "accepted": [],
+   "verified": true,
+   "number": 40
+  },
+  {
+   "kind": "abcd",
+   "topic": "Predložky a členy",
+   "prompt": "She has a great talent ___ painting.",
+   "options": [
+    "at",
+    "of",
+    "in",
+    "for"
+   ],
+   "correct": "D",
+   "explanation": "Talent for + niečo = nadanie na niečo.",
+   "verified": true,
+   "number": 41
+  },
+  {
+   "kind": "abcd",
+   "topic": "Predložky a členy",
+   "prompt": "He was accused ___ stealing the money.",
+   "options": [
+    "of",
+    "for",
+    "with",
+    "about"
+   ],
+   "correct": "A",
+   "explanation": "Accuse somebody of + -ing = obviniť niekoho z niečoho.",
+   "verified": true,
+   "number": 42
+  },
+  {
+   "kind": "abcd",
+   "topic": "Modálne slovesá a podmienky",
+   "prompt": "He ___ be at home; his car is outside.",
+   "options": [
+    "must",
+    "can’t",
+    "needn’t",
+    "shouldn’t"
+   ],
+   "correct": "A",
+   "explanation": "Must vyjadruje takmer istý odhad (je doma, vidím auto).",
+   "verified": true,
+   "number": 43
+  },
+  {
+   "kind": "abcd",
+   "topic": "Modálne slovesá a podmienky",
+   "prompt": "I would not have gone if I ___ it would rain.",
+   "options": [
+    "would know",
+    "know",
+    "knew",
+    "had known"
+   ],
+   "correct": "D",
+   "explanation": "Podmienka v minulosti: if + past perfect, would have + 3. tvar.",
+   "verified": true,
+   "number": 44
+  },
+  {
+   "kind": "abcd",
+   "topic": "Čítanie s porozumením",
+   "prompt": "Why are cities building bike lanes?",
+   "options": [
+    "To reduce traffic and pollution.",
+    "To save parking space.",
+    "To make streets wider.",
+    "To sell more bikes."
+   ],
+   "correct": "A",
+   "explanation": "V texte: „to reduce traffic and pollution“.",
+   "verified": true,
+   "passage": "u12",
+   "number": 45
+  },
+  {
+   "kind": "abcd",
+   "topic": "Čítanie s porozumením",
+   "prompt": "What do some drivers complain about?",
+   "options": [
+    "There are too many cars.",
+    "Bike lanes take up parking space.",
+    "Cyclists are too fast.",
+    "Bikes are too expensive."
+   ],
+   "correct": "B",
+   "explanation": "V texte: „bike lanes take up valuable parking space“.",
+   "verified": true,
+   "passage": "u12",
+   "number": 46
+  },
+  {
+   "kind": "abcd",
+   "topic": "Čítanie s porozumením",
+   "prompt": "What do city planners say?",
+   "options": [
+    "Cars are faster.",
+    "Cycling is dangerous.",
+    "Parking is more important.",
+    "Every cyclist means one car less."
+   ],
+   "correct": "D",
+   "explanation": "V texte: „every cyclist means one car less on the road“.",
+   "verified": true,
+   "passage": "u12",
+   "number": 47
   }
  ]
 }

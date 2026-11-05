@@ -4,7 +4,7 @@
   "year": 2026,
   "variant": "B1",
   "title": "Angličtina – B1 Stredne pokročilý",
-  "duration_min": 40
+  "duration_min": 45
  },
  "passages": [
   {
@@ -16,6 +16,11 @@
    "key": "u6",
    "title": "Ukážka 6 – A lost dog",
    "body": "Last Saturday, Emma was walking in the park when she found a small brown dog. It had no collar, so she took it home and put up posters in the neighbourhood. Two days later, an old man called. His dog, Max, had run away during a storm. He was very happy and gave Emma a box of chocolates to say thank you. Emma says that she would like to get her own dog one day."
+  },
+  {
+   "key": "u11",
+   "title": "Ukážka 11 – A new hobby",
+   "body": "Last year, Peter started painting. At first, his pictures were terrible, but he kept practising every evening. After six months, a local café asked him to put some of his paintings on the wall. Now he sells a few pictures every month and uses the money to buy better paints. Peter says that patience is more important than talent."
   }
  ],
  "questions": [
@@ -582,6 +587,194 @@
    "verified": true,
    "passage": "u6",
    "number": 40
+  },
+  {
+   "kind": "abcd",
+   "topic": "Prítomné časy",
+   "prompt": "I ___ my homework yet.",
+   "options": [
+    "didn’t finished",
+    "haven’t finished",
+    "don’t finish",
+    "am not finish"
+   ],
+   "correct": "B",
+   "explanation": "Yet v zápore ide s present perfect: haven’t + 3. tvar slovesa.",
+   "verified": true,
+   "number": 41
+  },
+  {
+   "kind": "abcd",
+   "topic": "Prítomné časy",
+   "prompt": "Water ___ at 0 degrees.",
+   "options": [
+    "is freezing",
+    "freeze",
+    "freezes",
+    "froze"
+   ],
+   "correct": "C",
+   "explanation": "Všeobecná pravda: present simple, pri it pridáme -s.",
+   "verified": true,
+   "number": 42
+  },
+  {
+   "kind": "abcd",
+   "topic": "Minulé a budúce časy",
+   "prompt": "When I was a child, I ___ play in the garden every day.",
+   "options": [
+    "was used to",
+    "am used to",
+    "use to",
+    "used to"
+   ],
+   "correct": "D",
+   "explanation": "Used to + základný tvar vyjadruje zvyk v minulosti.",
+   "verified": true,
+   "number": 43
+  },
+  {
+   "kind": "abcd",
+   "topic": "Minulé a budúce časy",
+   "prompt": "I ___ to the shop when I met Tom.",
+   "options": [
+    "am going",
+    "was going",
+    "go",
+    "went"
+   ],
+   "correct": "B",
+   "explanation": "Past continuous (was + -ing) opisuje dej, ktorý práve prebiehal, keď ho niečo prerušilo.",
+   "verified": true,
+   "number": 44
+  },
+  {
+   "kind": "abcd",
+   "topic": "Slovná zásoba",
+   "prompt": "Which word is an adjective?",
+   "options": [
+    "beautiful",
+    "beauty",
+    "beautifully",
+    "beautify"
+   ],
+   "correct": "A",
+   "explanation": "Beautiful = krásny (prídavné meno). Beauty = krása (podstatné), beautifully = krásne (príslovka).",
+   "verified": true,
+   "number": 45
+  },
+  {
+   "kind": "short",
+   "topic": "Slovná zásoba",
+   "prompt": "Dopíš slovo: A place where you can borrow books is a ______.",
+   "correct": "library",
+   "explanation": "Library = knižnica. Bookshop = kníhkupectvo.",
+   "accepted": [],
+   "verified": true,
+   "number": 46
+  },
+  {
+   "kind": "abcd",
+   "topic": "Predložky a členy",
+   "prompt": "She is married ___ a doctor.",
+   "options": [
+    "of",
+    "with",
+    "by",
+    "to"
+   ],
+   "correct": "D",
+   "explanation": "Be married to = byť vydatá/ženatý s niekým.",
+   "verified": true,
+   "number": 47
+  },
+  {
+   "kind": "abcd",
+   "topic": "Predložky a členy",
+   "prompt": "There is ___ umbrella in the hall.",
+   "options": [
+    "the",
+    "a",
+    "–",
+    "an"
+   ],
+   "correct": "D",
+   "explanation": "Umbrella začína samohláskovým zvukom, preto an.",
+   "verified": true,
+   "number": 48
+  },
+  {
+   "kind": "abcd",
+   "topic": "Modálne slovesá a podmienky",
+   "prompt": "You ___ better see a doctor.",
+   "options": [
+    "has",
+    "have",
+    "would",
+    "had"
+   ],
+   "correct": "D",
+   "explanation": "Had better + základný tvar = radšej by si mal (silnejšia rada).",
+   "verified": true,
+   "number": 49
+  },
+  {
+   "kind": "abcd",
+   "topic": "Modálne slovesá a podmienky",
+   "prompt": "I ___ speak French when I was five.",
+   "options": [
+    "should",
+    "could",
+    "can",
+    "must"
+   ],
+   "correct": "B",
+   "explanation": "Could je minulý tvar can, vyjadruje schopnosť v minulosti.",
+   "verified": true,
+   "number": 50
+  },
+  {
+   "kind": "abcd",
+   "topic": "Čítanie s porozumením",
+   "prompt": "How did Peter improve?",
+   "options": [
+    "By reading books.",
+    "By travelling.",
+    "By taking expensive lessons.",
+    "By practising every evening."
+   ],
+   "correct": "D",
+   "explanation": "V texte: „he kept practising every evening“.",
+   "verified": true,
+   "passage": "u11",
+   "number": 51
+  },
+  {
+   "kind": "abcd",
+   "topic": "Čítanie s porozumením",
+   "prompt": "What happened after six months?",
+   "options": [
+    "He won a prize.",
+    "He opened a shop.",
+    "He stopped painting.",
+    "A café asked him to show his paintings."
+   ],
+   "correct": "D",
+   "explanation": "V texte: kaviareň mu ponúkla vystaviť obrazy.",
+   "verified": true,
+   "passage": "u11",
+   "number": 52
+  },
+  {
+   "kind": "short",
+   "topic": "Čítanie s porozumením",
+   "prompt": "Napíš, čo je podľa Petra dôležitejšie než talent (jedno slovo):",
+   "correct": "patience",
+   "explanation": "V texte: „patience is more important than talent“.",
+   "accepted": [],
+   "verified": true,
+   "passage": "u11",
+   "number": 53
   }
  ]
 }
